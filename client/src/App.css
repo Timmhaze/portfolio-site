@@ -1,0 +1,20 @@
+.container
+{
+  border: 2px dashed red;
+}
+
+.row
+{
+  border : 2px dashed blue;
+}
+
+.col-md-6
+{
+  border: 3px dashed green;
+}
+
+.col
+{
+  border: 3px dashed green;
+}
+

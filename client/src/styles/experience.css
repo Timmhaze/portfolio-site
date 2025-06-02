@@ -1,0 +1,121 @@
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+
+/* Container padding for breathing room */
+.experience-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Main header */
+.experience-header {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: #F7882F;
+}
+
+/* Subheader under main header */
+.experience-subheader {
+  font-size: 1.2rem;
+  color: #666;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+/* General horizontal rule styling */
+.experience-container hr {
+  border: 0;
+  height: 1px;
+  background: #000;
+  margin: 1.5rem 0;
+}
+
+/* Section header (like Education) */
+.education-header {
+  font-size: 2.1rem;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  text-align: left;
+  color: #F7882F;
+}
+
+/* College title styling */
+.college-title {
+  font-size: 1.5rem;
+  color: #222;
+}
+
+/* Course title */
+.course-title {
+  font-size: 1.1rem;
+  font-style: italic;
+  color: #666;
+  margin-bottom: 0.5rem;
+  margin-left: 1.8rem
+}
+
+/* Duration */
+.course-duration {
+  font-size: 1rem;
+  color: #999;
+  margin-bottom: 1rem;
+  margin-left: 1.8rem
+}
+
+.college-title-bullet {
+    color: #F7882F;
+    padding-bottom: 0.2rem;
+}
+
+/* Paragraph text in details */
+/* .experience-container p {
+  font-size: 1rem;
+  color: #444;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+} */
+
+/* Location container: icon + text inline and centered vertically */
+.education-location {
+  display: flex;
+  align-items: center;
+  font-size: 0.95rem;
+  color: #777;
+  margin-top: 0.25rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Adjust icon spacing */
+.education-location svg {
+  color: #F7882F; /* subtle red location icon */
+  margin-right: 0.5rem;
+  font-size: 1.1rem;
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+  .experience-container {
+    padding: 1.5rem 1rem;
+  }
+
+  .experience-header {
+    font-size: 2.2rem;
+  }
+
+  .education-header {
+    font-size: 1.5rem;
+  }
+
+  .college-title {
+    font-size: 1.3rem;
+  }
+
+  .course-title, .course-duration, .education-location, .experience-container p {
+    font-size: 0.9rem;
+  }
+}
