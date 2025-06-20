@@ -4,6 +4,7 @@ import { usePageScroller } from '@furman1331/page-scroller';
 import { Container } from 'react-bootstrap';
 
 import About from './components/About';
+import WorkExperience from './components/WorkExperience';
 import Experience from './components/Experience';
 import Skills from './components/Skills';
 import Contact from './components/Contact';
@@ -26,6 +27,10 @@ function App() {
       <div id="scroll-body">
         <section className="page-scroller__section">
           <About />
+        </section>
+
+        <section className="page-scroller__section">
+          <WorkExperience />
         </section>
 
         <section className="page-scroller__section">
