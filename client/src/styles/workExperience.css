@@ -1,3 +1,9 @@
+.history-header {
+  color: #F7882F;
+  text-align: center;
+  margin-bottom: 50px;
+} 
+
 .work-experience-header {
   color: #F7882F;
 }
@@ -5,14 +11,52 @@
 .work-experience-item-hr-left {
   max-width: 75%;
   margin-right: 0px;
+  margin-bottom: 15px;
 }
 
 .work-experience-item-hr-right {
   max-width: 75%;
   margin-left: 0px;
+  margin-bottom: 15px;
+}
+
+.work-experience-header-hr {
+  width: 25%;
+  margin-left: 0px;
+  margin-top: 15px;
+}
+
+.work-experience-header-col {
+  padding-left: 25px;
 }
 
 
+.work-experience-item-title {
+  font-size: 1.15rem;
+}
+
+.work-experience-item-company {
+  font-size: 1.5rem;
+  color: #F7882F;
+}
+
+.work-experience-item-date {
+  font-style: italic;
+  color: #747474;
+  font-size: 0.95rem;
+  margin-top: 10px; 
+  margin-bottom: 5px;
+}
+
+.work-experience-item-description {
+  font-size: 0.95rem;
+}
+
+.work-experience-item-location {
+  font-size: 0.90rem;
+  color: #747474;
+  margin-top: 5px;
+}
 
 /*/////////////Timeline////////////////*/
 

@@ -1,7 +1,6 @@
 //import './App.css';
 import { useEffect, useRef } from 'react';
 import { usePageScroller } from '@furman1331/page-scroller';
-import { Container } from 'react-bootstrap';
 
 import About from './components/About';
 import WorkExperience from './components/WorkExperience';
@@ -18,6 +17,7 @@ function App() {
   //  Because this is a dev environment (<Strict> tags in main.tsx), the 
   //  component is mounted twice to help find accidentally impure code. 
   //  this just checks if the isInitialized ref is false or true to prevent errors due to this behaviour.
+
   // useEffect(() => {
   //   if (!isInitialized.current) {
   //      usePageScroller({ isAllowToScrollThroughSlides: true }).initPageScroller('#scroll-body');
@@ -33,6 +33,11 @@ function App() {
 
     //     <section className="page-scroller__section">
     //       <WorkExperience />
+    //       <TimelineDivider />
+    //     </section>
+
+    //     <section className="page-scroller__section">
+    //       <Education />
     //     </section>
 
     //     <section className="page-scroller__section">
@@ -48,16 +53,20 @@ function App() {
     //     </section>
     // </div>
 
-    <div>
-        <About />
-        <WorkExperience />
-        <TimelineDivider />
-        <Education />
-        <Experience />
-        <Skills />
-        <Contact />
-    </div>
+  <div>
+    <About />
+    <WorkExperience />
+    <TimelineDivider />
+    <Education />
+    <Experience />
+    <Skills />
+    <Contact />
+  </div>
+
+   
   );
 }
+
+ 
 
 export default App;

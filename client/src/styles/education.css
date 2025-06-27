@@ -1,15 +1,49 @@
 .education-header {
   color: #F7882F;
+  margin-bottom: 0rem;
 }
 
 .education-item-hr-left {
   max-width: 75%;
   margin-right: 0px;
+  margin-bottom: 15px;
 }
 
 .education-item-hr-right {
   max-width: 75%;
   margin-left: 0px;
+  margin-bottom: 15px;
+}
+
+.education-header-hr {
+  width: 25%;
+  margin-left: 0px;
+  margin-top: 15px;
+}
+
+.education-header-col {
+  padding-left: 25px;
+}
+
+.education-item-title {
+  font-size: 1.5rem;
+  color: #F7882F;
+}
+
+.education-item-company {
+  font-size: 1.15rem;
+}
+
+.education-item-date {
+  font-style: italic;
+  color: #747474;
+  font-size: 0.95rem;
+  margin-top: 10px; 
+  margin-bottom: 5px;
+}
+
+.education-item-description {
+  font-size: 0.95rem;
 }
 
 /*/////////////Timeline////////////////*/

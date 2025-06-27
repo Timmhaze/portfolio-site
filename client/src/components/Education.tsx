@@ -1,6 +1,8 @@
 import React from 'react';
 import '../styles/education.css';
 import educationData from '../data/educationData.ts';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faMapMarkerAlt } from '@fortawesome/free-solid-svg-icons';
 import { Container, Row, Col } from 'react-bootstrap';
 
 export default function Education() {
@@ -8,9 +10,9 @@ export default function Education() {
     <Container className="education-container">
 
       <Row className="education-header-row">
-        <Col md={12}>
+        <Col md={12} className="education-header-col">
           <h2 className="education-header">Education</h2>
-          <hr />
+          <hr className="education-header-hr" />
         </Col>
       </Row>
 
@@ -25,6 +27,10 @@ export default function Education() {
                 <p className="education-item-date">{item.date}</p>
                 <p className="education-item-course">{item.course}</p>
                 <p className="education-item-description">{item.description}</p>
+                <p className="work-experience-item-location">
+                  {item.location}
+                  <FontAwesomeIcon icon={faMapMarkerAlt} style={{ marginLeft: 5, color: "#F7882F" }} />
+                </p>
               </div>
             )}
           </Col>
@@ -45,6 +51,10 @@ export default function Education() {
                 <p className="education-item-date">{item.date}</p>
                 <p className="education-item-course">{item.course}</p>
                 <p className="education-item-description">{item.description}</p>
+                <p className="work-experience-item-location">
+                  <FontAwesomeIcon icon={faMapMarkerAlt} style={{ marginRight: 5, color: "#F7882F" }} />
+                  {item.location}
+                </p>
               </div>
             )}
           </Col>

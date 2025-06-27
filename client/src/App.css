@@ -1,8 +1,6 @@
-.page-scroller__section {
-  height: 100vh;
-  width: 100%;
-  overflow: hidden;
+section {
+  min-height: 100vh;
   display: flex;
-  align-items: center;
+  flex-direction: column;
   justify-content: center;
 }
