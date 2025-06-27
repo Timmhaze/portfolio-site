@@ -1,0 +1,25 @@
+/*/////////////Timeline////////////////*/
+
+.timeline-divider-col-dashed {
+    min-height: 10vh;
+}
+
+.timeline-divider-line-dashed {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  border: 3px dashed #F7882F;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* Add arrowhead at the bottom */
+.timeline-divider-line-dashed::after {
+  content: "";
+  position: absolute;
+  bottom: -20px; /* places arrow just below the line */
+  left: 50%;
+  transform: translateX(-50%);
+  border: 6px solid transparent;
+  border-top: 8px solid #F7882F; /* makes a downward-pointing arrow */
+}

@@ -1,0 +1,120 @@
+      
+   <Row>
+        <Col md={12}>
+          <h2 className="timeline-title">History</h2>
+          <hr />
+        </Col>
+      </Row>
+
+
+
+
+{/*/////////////////////////////////////////////////////////////////////////////////////////////////////////*/}
+
+      <Row className="position-relative timeline-row-segment">
+        {/* Left column */}
+        <Col md={5} className="d-flex flex-column align-items-end justify-content-center">
+          <div className="timeline-item left">
+            <h5 className="timeline-segment-title">Frontend Developer</h5>
+            <hr />
+            <p>Company A — Jan 2022 - Present</p>
+            <p>Intern</p>
+            <p>Company C — 2019</p>
+          </div>
+        </Col>
+
+        {/* Center vertical line */}
+        <Col md={2} className="timeline-line-col">
+          <div className="timeline-line">
+            <div className="timeline-dot" style={{ top: '25%' }}></div>
+          </div>
+        </Col>
+
+        {/* Right column */}
+        <Col md={5} className="d-flex flex-column justify-content-center">
+          {/*Empty col for spacing*/}
+        </Col>
+      </Row>
+
+{/*/////////////////////////////////////////////////////////////////////////////////////////////////////////*/}
+
+      <Row className="position-relative timeline-row-segment">
+        {/* Left column */}
+        <Col md={5} className="d-flex flex-column align-items-end justify-content-center">
+          {/*Empty col for spacing*/}
+        </Col>
+
+        {/* Center vertical line */}
+        <Col md={2} className="timeline-line-col">
+          <div className="timeline-line">
+            <div className="timeline-dot" style={{ top: '25%' }}></div>
+          </div>
+        </Col>
+
+        {/* Right column */}
+        <Col md={5} className="d-flex flex-column justify-content-center">
+          <div className="timeline-item right">
+            <h5 className="timeline-segment-title">Frontend Developer</h5>
+            <hr />
+            <p>Company A — Jan 2022 - Present</p>
+            <p>Intern</p>
+            <p>Company C — 2019</p>
+          </div>
+        </Col>
+      </Row>
+
+{/*/////////////////////////////////////////////////////////////////////////////////////////////////////////*/}
+
+      <Row className="position-relative timeline-row-segment">
+        {/* Left column */}
+        <Col md={5} className="d-flex flex-column align-items-end justify-content-center">
+          <div className="timeline-item left">
+            <h5 className="timeline-segment-title">Frontend Developer</h5>
+            <hr />
+            <p>Company A — Jan 2022 - Present</p>
+            <p>Intern</p>
+            <p>Company C — 2019</p>
+          </div>
+        </Col>
+
+        {/* Center vertical line */}
+        <Col md={2} className="timeline-line-col">
+          <div className="timeline-line">
+            <div className="timeline-dot" style={{ top: '25%' }}></div>
+          </div>
+        </Col>
+
+        {/* Right column */}
+        <Col md={5} className="d-flex flex-column justify-content-center">
+          {/*Empty col for spacing*/}
+        </Col>
+      </Row>
+
+{/*/////////////////////////////////////////////////////////////////////////////////////////////////////////*/}
+
+      <Row className="position-relative timeline-row-segment">
+        {/* Left column */}
+        <Col md={5} className="d-flex flex-column align-items-end justify-content-center">
+         {/*Empty col for spacing*/}
+        </Col>
+
+        {/* Center vertical line */}
+        <Col md={2} className="timeline-line-col">
+          <div className="timeline-line">
+            <div className="timeline-dot" style={{ top: '25%' }}></div>
+          </div>
+        </Col>
+
+        {/* Right column */}
+        <Col md={5} className="d-flex flex-column justify-content-center">
+          <div className="timeline-item right">
+              <h5 className="timeline-segment-title">Retail Sales Assistant</h5>
+              <hr />
+              <p>Spar Intern</p>
+              <p>Intern</p>
+              <p>Company C — 2019</p>
+          </div>
+        </Col>
+      </Row>
+
+{/*/////////////////////////////////////////////////////////////////////////////////////////////////////////*/}

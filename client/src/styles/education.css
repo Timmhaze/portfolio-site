@@ -1,22 +1,20 @@
-.work-experience-header {
+.education-header {
   color: #F7882F;
 }
 
-.work-experience-item-hr-left {
+.education-item-hr-left {
   max-width: 75%;
   margin-right: 0px;
 }
 
-.work-experience-item-hr-right {
+.education-item-hr-right {
   max-width: 75%;
   margin-left: 0px;
 }
 
-
-
 /*/////////////Timeline////////////////*/
 
-.work-experience-timeline-line {
+.education-timeline-line {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -26,8 +24,8 @@
   transform: translateX(-50%);
 }
 
-.work-experience-timeline-dot {
-  position: absolute;
+.education-timeline-dot {
+ position: absolute;
   width: 30px;
   height: 30px;
   background-color: white;
