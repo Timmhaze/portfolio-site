@@ -13,7 +13,7 @@ const experienceData = [
         company: "Murphy's Irish Pub",
         date: '2022 ~ 2023',
         description: 'Did some stuff and things, worked on projects, and collaborated with teams to deliver high-quality software solutions.',
-        location: 'Berlin, Germany',
+        location: 'Berlin, Germany'
     },
     {
         side: 'right',
@@ -26,7 +26,7 @@ const experienceData = [
     {
         side: 'left',
         title: 'Retail Associate | Part-time',
-        company: 'Spar - Franchised under BWG foods',
+        company: 'Spar - BWG foods',
         date: '2017 ~ 2020',
         description: 'Did some stuff and things, worked on projects, and collaborated with teams to deliver high-quality software solutions.',
         location: 'Dublin, Ireland'

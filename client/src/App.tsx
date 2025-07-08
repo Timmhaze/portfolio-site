@@ -6,6 +6,7 @@ import About from './components/About';
 import WorkExperience from './components/WorkExperience';
 import Experience from './components/Experience';
 import Skills from './components/Skills';
+import Skills_New from './components/Skills_New';
 import Contact from './components/Contact';
 import Education from './components/Education';
 import TimelineDivider from './components/TimelineDivider';
@@ -58,7 +59,8 @@ function App() {
     <WorkExperience />
     <TimelineDivider />
     <Education />
-    <Experience />
+    {/* <Experience /> */}
+    <Skills_New />
     <Skills />
     <Contact />
   </div>

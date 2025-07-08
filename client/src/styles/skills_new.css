@@ -1,0 +1,41 @@
+/* Col {
+    border: 1px dashed green
+}
+
+.Row {
+    border: 1px dashed red;
+}
+
+.skills-holder-col {
+    border: 1px dashed red;
+}
+
+.hard-skills-list {
+  border: 1px dashed blue;
+}
+
+.hard-skills-list {
+  border: 1px dashed blue;
+}
+
+
+.soft-skills-list {
+    border: 1px dashed green
+} */
+
+.stars-holder {
+    /* border: 1px dashed goldenrod; */
+    text-align: right;
+}
+
+.skills-divider-col {
+  display: flex;
+  justify-content: center;  /* horizontal center */
+  align-items: center;      /* vertical center */
+}
+
+.skills-divider {
+    border-left: 1px solid #000; /* thickness and color */
+    height: 100%; /* or a fixed height like 150px */
+    margin: 0 auto; /* center horizontally */
+}
