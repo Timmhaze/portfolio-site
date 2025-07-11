@@ -2,11 +2,12 @@
 import { useEffect, useRef } from 'react';
 import { usePageScroller } from '@furman1331/page-scroller';
 
+import SectionHeader from './components/SectionHeader';
 import About from './components/About';
 import WorkExperience from './components/WorkExperience';
-import Experience from './components/Experience';
+//import Experience from './components/ExperienceOLD';
 import Skills from './components/Skills';
-import Skills_New from './components/Skills_New';
+// import Skills from './components/SkillsOLD';
 import Contact from './components/Contact';
 import Education from './components/Education';
 import TimelineDivider from './components/TimelineDivider';
@@ -55,13 +56,27 @@ function App() {
     // </div>
 
   <div>
+    <SectionHeader 
+      title = "Profile"
+      subtitle = "Beep boop computer go brrrrrr"
+    />
     <About />
+    <SectionHeader 
+      title = "History"
+      subtitle = "Beep boop computer go brrrrrr"
+    />
     <WorkExperience />
     <TimelineDivider />
     <Education />
-    {/* <Experience /> */}
-    <Skills_New />
+    <SectionHeader 
+      title = "Skills"
+      subtitle = "Beep boop computer go brrrrrr"
+    />
     <Skills />
+    <SectionHeader 
+      title = "Contact"
+      subtitle = "Beep boop computer go brrrrrr"
+    />
     <Contact />
   </div>
 

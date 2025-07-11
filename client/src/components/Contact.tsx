@@ -1,30 +1,32 @@
-import React from 'react'
-import { Row, Col, Container } from 'react-bootstrap';
-import '../styles/contact.css'; // Assuming you have a CSS file for styling
+import React from 'react';
+import { Container, Row, Col } from 'react-bootstrap';
+import styles from '../styles/contact.module.css';
 
 export default function Contact() {
   return (
-    <Container fluid className="contact-container">
-      <Row>
-        <Col>
-          <h1 className="contact-header">Contact</h1>
-          <p className="contact-subheader">Dox incoming lmao</p>
-          <hr />
-          <Row>
-            <Col md={6} sm={12}>
-              <a className="linkedin-link" href="https://www.linkedin.com/in/timothyhayes95/">
-                <i className="fa fa-linkedin-square"></i> https://www.linkedin.com/in/timothyhayes95/ 
+    <div className={styles['contact-section']}>
+      <Container fluid>
+        <Row>
+          <Col className="text-center">
+            <h4 className={styles.title}>Get in Touch</h4>
+            <p className={styles.text}>
+              Feel free to reach out via email or through any of the links below.
+            </p>
+            <p className={styles.email}>
+              <a href="mailto:timhayes95@gmail.com">TimHayes95@Gmail.com</a>
+            </p>
+            <div className={styles.links}>
+              <a href="https://github.com/Timmhaze" target="_blank" rel="noreferrer">
+                GitHub
               </a>
-            </Col>
-            <Col md={6} sm={12}>
-              <a className="email-link" href="mailto:TimHayes95@Gmail.com">
-                <i className="fa fa-at"></i> TimHayes95@Gmail.com
+              <a href="https://www.linkedin.com/in/timothyhayes95/" target="_blank" rel="noreferrer">
+                LinkedIn
               </a>
-            </Col>
-          </Row>
-          <hr />
-        </Col>
-      </Row>
-    </Container>
-  )
+            </div>
+            <p className={styles.footer}>© {new Date().getFullYear()} Timothy Hayes</p>
+          </Col>
+        </Row>
+      </Container>
+    </div>
+  );
 }

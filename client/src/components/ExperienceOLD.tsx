@@ -3,7 +3,7 @@ import { Row, Col, Container } from 'react-bootstrap'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBomb, faCircle, faMapMarkerAlt } from '@fortawesome/free-solid-svg-icons';
 
-import '../styles/experience.css'; // Assuming you have a CSS file for styling
+import '../styles/experience.module.css'; // Assuming you have a CSS file for styling
 
 export default function Experience() {
   return (

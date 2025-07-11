@@ -1,40 +1,47 @@
-.education-header {
-  color: #F7882F;
-  margin-bottom: 0rem;
+.work-experience-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
-.education-item-hr-left {
+.work-experience-header {
+  color: #F7882F;
+}
+
+.work-experience-item-hr-left {
   max-width: 75%;
+  margin-left: 10rem;
   margin-right: 0px;
   margin-bottom: 15px;
 }
 
-.education-item-hr-right {
+.work-experience-item-hr-right {
   max-width: 75%;
   margin-left: 0px;
   margin-bottom: 15px;
 }
 
-.education-header-hr {
+.work-experience-header-hr {
   width: 25%;
   margin-left: 0px;
   margin-top: 15px;
 }
 
-.education-header-col {
+.work-experience-header-col {
   padding-left: 25px;
 }
 
-.education-item-title {
+
+.work-experience-item-title {
+  font-size: 1.15rem;
+}
+
+.work-experience-item-company {
   font-size: 1.5rem;
   color: #F7882F;
 }
 
-.education-item-company {
-  font-size: 1.15rem;
-}
-
-.education-item-date {
+.work-experience-item-date {
   font-style: italic;
   color: #747474;
   font-size: 0.95rem;
@@ -42,13 +49,19 @@
   margin-bottom: 5px;
 }
 
-.education-item-description {
+.work-experience-item-description {
   font-size: 0.95rem;
+}
+
+.work-experience-item-location {
+  font-size: 0.90rem;
+  color: #747474;
+  margin-top: 5px;
 }
 
 /*/////////////Timeline////////////////*/
 
-.education-timeline-line {
+.work-experience-timeline-line {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -58,8 +71,8 @@
   transform: translateX(-50%);
 }
 
-.education-timeline-dot {
- position: absolute;
+.work-experience-timeline-dot {
+  position: absolute;
   width: 30px;
   height: 30px;
   background-color: white;

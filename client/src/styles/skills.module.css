@@ -1,0 +1,52 @@
+
+.skills-title {
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+  text-align: left;
+  color: #F7882F;
+}
+
+.skills-hr {
+  margin-top: 0.1rem;
+  margin-bottom: rem;
+}
+
+.skill-category {
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+    text-align: left;
+    color: #F7882F;
+    margin-top: 1.5rem;
+}
+
+.skill {
+  margin-top: 0.3rem;
+  margin-bottom: 0.3rem;
+}
+
+.skills-list-row {
+  margin-top: 0.3rem;
+  margin-bottom: 0.3rem;
+}
+
+.skills-list-row:hover {
+  color: #F7882F;
+}
+
+.skill-level {
+    text-align: right;
+}
+
+
+.skills-divider-col {
+  margin-top: 3rem;
+  display: flex;
+  justify-content: center;  /* horizontal center */
+  align-items: center;      /* vertical center */
+}
+
+.skills-divider {
+    border-left: 1px solid #000; /* thickness and color */
+    height: 100%; /* or a fixed height like 150px */
+    margin: 0 auto; /* center horizontally */
+}

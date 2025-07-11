@@ -1,0 +1,42 @@
+.title {
+  font-size: 1.5rem;
+  color: #f7882f;
+  margin-bottom: 0.5rem;
+}
+
+.text {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.email a {
+  color: #f7882f;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.email a:hover {
+  text-decoration: underline;
+}
+
+.links {
+  margin-top: 1rem;
+}
+
+.links a {
+  margin: 0 0.75rem;
+  color: #333;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.links a:hover {
+  color: #f7882f;
+}
+
+.footer {
+  margin-top: 1.5rem;
+  font-size: 0.875rem;
+  color: #999;
+}
