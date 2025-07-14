@@ -11,7 +11,7 @@ export default function About() {
   return (
     <Container className={styles['about-container']}>
         <Row>
-            <Col md={4} sm={12}>
+            <Col lg={4} md={12} sm={12}>
 
                 <motion.h2
                     className={styles['about-me-header']}
@@ -37,7 +37,7 @@ export default function About() {
                     intuitive UX, and the small design choices that bring a site to life. I’m always looking to grow my skills and take on projects that challenge both logic and creativity.
                 </motion.p>
             </Col>
-            <Col className={styles['profile-image-col']} md={4} sm={12}>
+            <Col className={styles['profile-image-col']} lg={4} md={12} sm={12}>
                 <motion.img 
                     className={styles['profile-image']} src={profile} alt="thayes-image" 
                     variants={scaleUp}
@@ -46,7 +46,7 @@ export default function About() {
                     viewport={{ once: false, amount: 0.2 }} // controls re-trigger behavior
                 /> 
             </Col>
-            <Col md={4} sm={12}>
+            <Col lg={4} md={12} sm={12}>
 
                 <motion.h2 
                     className={styles['details-header']}
