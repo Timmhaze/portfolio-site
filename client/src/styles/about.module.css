@@ -1,69 +1,46 @@
-/* * {
-    font-family: 'Roboto', sans-serif;
-} */
-
-/* 
-.title-wing-hr {
-  margin-top: 1.5rem;
-}
-
-.profile-header {
-  font-size: 2.5rem;
-  text-align: center;
-  color: #F7882F;
-}
-
-.profile-subheader {
-  font-size: 1.2rem;
-  color: #666;
-  text-align: center;
-  margin-bottom: 1rem;
-}
-
-.about-header-hr {
-  margin-top: 0.1rem;
-  margin-bottom: 3rem;
-} */
-
+/*/// Component container ///*/
 .about-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin-bottom: 30rem;
 }
 
-
+/*/// About Me ///*/
 .about-me-header {
-    font-size: 1.8rem;
-    margin-bottom: 1rem;
-    text-align: left;
-    color: #F7882F;
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  text-align: left;
+  color: #F7882F;
 }
 
 .about-me-content {
-    font-size: 1rem;
-    text-align: left;
+  font-size: 1rem;
+  text-align: left;
 }
 
+/*/// Image ///*/
 .profile-image-col {
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    max-width: 100%;
-    height: auto;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+  height: auto;
 }
 
 .profile-image {
-    border: 5px solid #e2e0e0;
-    border-radius: 50%;
+  border: 5px solid #e2e0e0;
+  border-radius: 50%;
 }
 
+/*/// Details ///*/
 .details-header {
-    font-size: 1.8rem;
-    margin-bottom: 1rem;
-    text-align: left;
-    padding-left: 4rem;
-    color: #F7882F;
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  text-align: left;
+  padding-left: 4rem;
+  color: #F7882F;
 }
 
 .details-subheader {
@@ -75,39 +52,20 @@
 }
 
 .details-content {
-    font-size: 1rem;
-    text-align: left;
-    padding-left: 4rem
+  font-size: 1rem;
+  text-align: left;
+  padding-left: 4rem
 }
 
+
+/*/// LinkedIn ///*/
 .linkedin-link {
-    font-weight: lighter;
+  font-weight: lighter;
 }
 
 a {
-    text-decoration: none;
-    color: #5e84ff;
+  text-decoration: none;
+  color: #5e84ff;
 }
 
 
-
-/* Responsive tweaks */
-@media (max-width: 768px) {
-  .about-container {
-    padding: 1rem;
-  }
-
-  .profile-header {
-    font-size: 2rem;
-  }
-
-  .about-me-header,
-  .details-header {
-    font-size: 1.3rem;
-  }
-
-  .about-me-content,
-  .details-subheader {
-    font-size: 0.95rem;
-  }
-}

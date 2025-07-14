@@ -1,25 +1,20 @@
+
+/* /// Component container /// */
 .education-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
+/* Header to denote "education" section */
+
+.header-col {
+  padding-left: 25px;
+}
+
 .education-header {
   color: #F7882F;
   margin-bottom: 0rem;
-}
-
-.education-item-hr-left {
-  max-width: 75%;
-  margin-right: 0px;
-  margin-left: 10rem;
-  margin-bottom: 15px;
-}
-
-.education-item-hr-right {
-  max-width: 75%;
-  margin-left: 0px;
-  margin-bottom: 15px;
 }
 
 .education-header-hr {
@@ -28,20 +23,34 @@
   margin-top: 15px;
 }
 
-.education-header-col {
-  padding-left: 25px;
+
+/* /// Timeline item /// */
+
+.item-hr-left { /* Left side horizontal rule */
+  max-width: 75%;
+  margin-right: 0px;
+  margin-left: 10rem;
 }
 
-.education-item-title {
+.item-hr-right { /* Right side horizontal rule */
+  max-width: 75%;
+  margin-left: 0px;
+}
+
+.item-institute {
   font-size: 1.5rem;
   color: #F7882F;
 }
 
-.education-item-company {
-  font-size: 1.15rem;
+.item-course {
+  font-size: 1.25rem;
 }
 
-.education-item-date {
+.item-type {
+  color: #F7882F;
+}
+
+.item-date {
   font-style: italic;
   color: #747474;
   font-size: 0.95rem;
@@ -49,28 +58,40 @@
   margin-bottom: 5px;
 }
 
-.education-item-description {
-  font-size: 0.95rem;
+.item-description {
+  font-size: 1.075rem;
 }
 
-/*/////////////Timeline////////////////*/
+.item-location {
+  font-style: italic;
+  font-size: 1rem;
+  color: #747474;
+  margin-top: 5px;
+}
 
-.education-timeline-line {
+
+/* /// Vertical timeline /// */
+
+.timeline-col {
+  padding: 0;
+}
+
+.timeline-line {
   position: absolute;
   top: 0;
   bottom: 0;
-  width: 6px;
+  width: 4px;
   background-color: #F7882F;
   left: 50%;
   transform: translateX(-50%);
 }
 
-.education-timeline-dot {
- position: absolute;
-  width: 30px;
-  height: 30px;
+.timeline-dot {
+  position: absolute;
+  width: 22px;
+  height: 22px;
   background-color: white;
-  border: 4px solid #F7882F;
+  border: 3px solid #F7882F;
   border-radius: 50%;
   left: 50%;
   transform: translateX(-50%);

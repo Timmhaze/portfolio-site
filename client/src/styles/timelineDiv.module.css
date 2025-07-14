@@ -8,7 +8,7 @@
   position: absolute;
   top: 0;
   bottom: 0;
-  border: 3px dashed #F7882F;
+  border: 0.18rem dashed #F7882F;
   left: 50%;
   transform: translateX(-50%);
 }
