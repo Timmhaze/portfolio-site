@@ -69,3 +69,45 @@ a {
 }
 
 
+/*=== Responsive Styles ===*/
+
+@media (max-width: 768px) {
+  .about-container {
+    margin-bottom: 6rem; /* less huge spacing on mobile */
+  }
+
+  .about-me-header,
+  .details-header {
+    font-size: 1.7rem;
+    text-align: center;
+    padding-left: 0;
+  }
+
+  .about-me-content {
+    font-size: 0.9rem;
+    text-align: center;
+  }
+
+  .profile-image-col {
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+  }
+
+  .profile-image {
+    width: 220px; /* smaller on mobile */
+  }
+
+  .details-subheader,
+  .details-content {
+    padding-left: 0;
+    text-align: center;
+    font-size: 1rem;
+  }
+
+  /* Make sure LinkedIn link is centered as well */
+  .linkedin-link {
+    font-weight: lighter;
+    text-align: center;
+  }
+}
+

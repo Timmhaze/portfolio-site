@@ -17,7 +17,7 @@ export default function SectionHeader({ title, subtitle, backgroundColor}: Secti
     <Container style={{ backgroundColor }} className={styles['section-header-container']}>
         <Row>
             <Col md={4}>
-                <hr className={styles['header-wing-hr']}/>
+                <hr className={styles['header-wing-left-hr']}/>
             </Col>
             <Col md={4}>
 
@@ -42,7 +42,7 @@ export default function SectionHeader({ title, subtitle, backgroundColor}: Secti
                 </motion.p>
             </Col>
             <Col md={4}>
-                <hr className={styles['header-wing-hr']}/>
+                <hr className={styles['header-wing-right-hr']}/>
             </Col>
         </Row>
         {/* <hr className={styles['section-header-hr']}/> */}
