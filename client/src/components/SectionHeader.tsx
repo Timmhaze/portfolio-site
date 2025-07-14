@@ -23,7 +23,7 @@ export default function SectionHeader({ title, subtitle, backgroundColor}: Secti
 
                 <motion.h1
                     className={styles['section-header']}
-                    variants={slideInFromTop}
+                    variants={fadeIn}
                     initial="hidden"
                     whileInView="visible"
                     viewport={{ once: false, amount: 0.2 }} // controls re-trigger behavior

@@ -1,10 +1,14 @@
-/*/////////////Timeline////////////////*/
+/* /// Timeline /// */
+.timeline-divider-container {
+  /* border: 1px dashed blue; */
 
-.timeline-divider-col-dashed {
-    min-height: 10vh;
+  display: flex;
+  flex-direction: column;
+  min-height: 12vh;
 }
 
 .timeline-divider-line-dashed {
+  min-height: 10vh;
   position: absolute;
   top: 0;
   bottom: 0;

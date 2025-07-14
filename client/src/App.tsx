@@ -1,18 +1,35 @@
 //import './App.css';
-import { useEffect, useRef } from 'react';
+import { useEffect, useState, useRef } from 'react';
 import { usePageScroller } from '@furman1331/page-scroller';
 
 import SectionHeader from './components/SectionHeader';
 import About from './components/About';
 import WorkExperience from './components/WorkExperience';
-//import Experience from './components/ExperienceOLD';
-import Skills from './components/Skills';
-// import Skills from './components/SkillsOLD';
-import Contact from './components/Contact';
-import Education from './components/Education';
+import WorkExperience_Mobile from './components/WorkExperience_Mobile'; // Mobile version of WorkExperience
 import TimelineDivider from './components/TimelineDivider';
+import Education from './components/Education';
+import Education_Mobile from './components/Education_Mobile';
+import Skills from './components/Skills';
+import Contact from './components/Contact';
+
+
 
 function App() {
+
+  const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth < 768);
+    };
+
+    window.addEventListener('resize', handleResize);
+
+    handleResize(); // Call it initially to set the correct state
+
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+
   // const { initPageScroller } = usePageScroller();
   // const isInitialized = useRef(false);
 
@@ -65,9 +82,11 @@ function App() {
       title = "History"
       subtitle = "Beep boop computer go brrrrrr"
     />
-    <WorkExperience />
+    {isMobile ? <WorkExperience_Mobile /> : <WorkExperience />}
+
     <TimelineDivider />
-    <Education />
+    
+    {isMobile ? <Education_Mobile /> : <Education />}
     <SectionHeader 
       title = "Skills"
       subtitle = "Beep boop computer go brrrrrr"
@@ -79,11 +98,7 @@ function App() {
     />
     <Contact />
   </div>
-
-   
   );
 }
-
- 
 
 export default App;

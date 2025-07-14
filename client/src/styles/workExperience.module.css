@@ -1,6 +1,9 @@
 
 /* /// Component container /// */
 .work-experience-container {
+
+  /* border: 1px dashed green; */
+
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -84,6 +87,104 @@
   position: absolute;
   width: 22px;
   height: 22px;
+  background-color: white;
+  border: 3px solid #F7882F;
+  border-radius: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+
+/*=== Mobile component styles ===*/
+
+.mobile-work-experience-container {
+  display: flex;
+  flex-direction: column;
+}
+
+/* /// Mobile header /// */
+
+.mobile-header-row {
+  justify-content: center;
+}
+
+.mobile-work-experience-header {
+  font-size: 1.4rem;
+  margin-bottom: 3rem;
+  text-align: center;
+  color: #F7882F;
+}
+
+
+.mobile-work-experience-row {
+  min-height: 15rem;
+  padding-left: 1rem;
+}
+
+.mobile-item-company {
+  font-size: 1.20rem;
+  color: #F7882F;
+}
+
+.mobile-item-hr
+{
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.mobile-item-title {
+  font-size: 0.95rem;
+}
+
+.mobile-item-type {
+  color: #F7882F;
+}
+
+.mobile-item-date {
+  font-style: italic;
+  color: #747474;
+  font-size: 0.8rem;
+  margin-top: 0.5rem; 
+}
+
+.mobile-item-description {
+  font-size: 0.95rem;
+}
+
+.mobile-item-location {
+  font-style: italic;
+  font-size: 0.85rem;
+  color: #747474;
+  margin-top: 3px;
+}
+
+.mobile-work-experience-col {
+  text-align: left;
+}
+
+
+/* /// Mobile timeline /// */
+
+.mobile-work-experience-timeline-col {
+  display: flex;
+  align-items: stretch; /* Ensures full vertical height */
+  position: relative;
+}
+
+.mobile-timeline-line {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 4px;
+  background-color: #F7882F; /* or your preferred color */
+  height: 100%;
+  transform: translateX(-50%);
+}
+
+.mobile-timeline-dot {
+  position: absolute;
+  width: 20px;
+  height: 20px;
   background-color: white;
   border: 3px solid #F7882F;
   border-radius: 50%;
