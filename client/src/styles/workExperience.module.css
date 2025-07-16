@@ -95,11 +95,13 @@
 }
 
 
-/*=== Mobile component styles ===*/
+/*===//////////////////////////// Mobile component styles ////////////////////////////===*/
+          /* /// These styles are for a mobile version of the WE component /// */
 
 .mobile-work-experience-container {
   display: flex;
   flex-direction: column;
+  margin-bottom: 4rem;
 }
 
 /* /// Mobile header /// */

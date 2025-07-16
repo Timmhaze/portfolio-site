@@ -25,8 +25,8 @@ export default function Skills() {
           // Thing here
 
           <Row key={index} className={styles['skills-list-row']}>
-            <Col md={6} className={styles['skill-name']}>{item.skillName}</Col>
-            <Col md={6} className={styles['skill-level']}>
+            <Col md={6} sm={6} xs={6} className={styles['skill-name']}>{item.skillName}</Col>
+            <Col md={6} sm={6} xs={6} className={styles['skill-level']}>
                 {[...Array(5)].map((_, i) => (
                   <FontAwesomeIcon
                     key={i}
@@ -44,8 +44,8 @@ export default function Skills() {
           // Thing here
 
           <Row key={index} className={styles['skills-list-row']}>
-            <Col md={6} className={styles['skill-name']}>{item.skillName}</Col>
-            <Col md={6} className={styles['skill-level']}>
+            <Col md={6} sm={6} xs={6} className={styles['skill-name']}>{item.skillName}</Col>
+            <Col md={6} sm={6} xs={6} className={styles['skill-level']}>
                 {[...Array(5)].map((_, i) => (
                   <FontAwesomeIcon
                     key={i}
@@ -79,8 +79,8 @@ export default function Skills() {
           // Thing here
           
           <Row key={index} className={styles['skills-list-row']}>
-            <Col md={6} className={styles['skill-name']}>{item.skillName}</Col>
-            <Col md={6} className={styles['skill-level']}>
+            <Col md={6} sm={6} xs={6} className={styles['skill-name']}>{item.skillName}</Col>
+            <Col md={6} sm={6} xs={6} className={styles['skill-level']}>
                 {[...Array(5)].map((_, i) => (
                   <FontAwesomeIcon
                     key={i}
@@ -98,8 +98,8 @@ export default function Skills() {
           // Thing here
 
           <Row key={index} className={styles['skills-list-row']}>
-            <Col md={6} className={styles['skill-name']}>{item.skillName}</Col>
-            <Col md={6} className={styles['skill-level']}>
+            <Col md={6} sm={6} xs={6} className={styles['skill-name']}>{item.skillName}</Col>
+            <Col md={6} sm={6} xs={6} className={styles['skill-level']}>
                 {[...Array(5)].map((_, i) => (
                   <FontAwesomeIcon
                     key={i}

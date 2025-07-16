@@ -41,7 +41,6 @@ export default function WorkExperience_Mobile() {
         </Col>
       </Row>
     ))}
-     <hr />
     </Container>
   );
 }
