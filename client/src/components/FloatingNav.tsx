@@ -14,16 +14,16 @@ export default function FloatingNav() {
   <Container className={styles.navContainer}>
     {sections.map((section, index) => (
     <a key={index} href={`#${section}`}>
-    <Row key={index} className={styles.navRow}>
-      
-      <Col md={2}>
-        <FontAwesomeIcon className={styles.navDot} icon={faCircle} />
-      </Col>
-      <Col md={10}>
-        <p className={styles.navText}>{section}</p>
-      </Col>
-      
-    </Row>
+      <Row key={index} className={styles.navRow}>
+        
+        <Col md={2}>
+          <FontAwesomeIcon className={styles.navDot} icon={faCircle} />
+        </Col>
+        <Col md={10}>
+          <p className={styles.navText}>{section}</p>
+        </Col>
+        
+      </Row>
     </a>
     ))}
   </Container>
