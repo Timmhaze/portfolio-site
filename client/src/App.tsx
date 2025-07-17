@@ -84,7 +84,7 @@ function App() {
     />
     {isMobile ? <WorkExperience_Mobile /> : <WorkExperience />}
 
-    <TimelineDivider />
+    {isMobile ? null : <TimelineDivider />}
     
     {isMobile ? <Education_Mobile /> : <Education />}
     <SectionHeader 

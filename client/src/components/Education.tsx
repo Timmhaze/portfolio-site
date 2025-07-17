@@ -1,38 +1,57 @@
 import React from 'react';
+import { Container, Row, Col } from 'react-bootstrap';
 import styles from '../styles/education.module.css';
+
+import { motion } from 'framer-motion';
+import { slideInFromLeft, slideInFromBottom, slideInFromRight, scaleUp, fadeIn, fadeInHr, fadeInTimelineDot } from '../animations/variants';
+
+
 import educationData from '../data/educationData.ts';
+
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faMapMarkerAlt } from '@fortawesome/free-solid-svg-icons';
-import { Container, Row, Col } from 'react-bootstrap';
+
 
 export default function Education() {
+
+  const defaultMotionHelper = {
+    initial: "hidden",
+    whileInView: "visible",
+    viewport: { once: false, amount: 0.2 } // controls re-trigger behavior
+  }
+
   return (
     <Container className={styles['education-container']}>
 
       <Row className={styles['header-row']}>
         <Col md={12} className={styles['header-col']}>
-          <h2 className={styles['education-header']}>Education</h2>
-          <hr className={styles['education-header-hr']} />
+          <motion.h2 className={styles['education-header']} variants={slideInFromLeft} {...defaultMotionHelper} custom={0.2}>Education</motion.h2>
+          <motion.hr className={styles['education-header-hr']} variants={fadeInHr} {...defaultMotionHelper} />
         </Col>
       </Row>
 
       {educationData.map((item, index) => (
         <Row key={index} className={styles['education-row']}>
-          {/* Left Column */}
           <Col md={5} className={styles['education-left-col']}>
             {item.side === 'left' && (
               <div className={`${styles['education-item']} text-end`}>
-                <h5 className={styles['item-institute']}>{item.college}</h5>
-                <hr className={styles['item-hr-left']} />
-                <p className={styles['item-course']}>
-                  {item.course} | <span className={styles['item-type']}>{item.type}</span>
-                </p>
-                <p className={styles['item-date']}>{item.date}</p>
-                <p className={styles['item-description']}>{item.description}</p>
-                <p className={styles['item-location']}>
+                <motion.h5 className={styles['item-institute']} variants={slideInFromLeft} {...defaultMotionHelper}>
+                  {item.college}
+                </motion.h5>
+                <motion.hr className={styles['item-hr-left']} variants={fadeInHr} {...defaultMotionHelper} custom={0.2} />
+                <motion.p className={styles['item-title']} variants={slideInFromLeft} {...defaultMotionHelper}>
+                  {item.course} | <motion.span className={styles['item-type']} variants={fadeIn} {...defaultMotionHelper} custom={0.3}>{item.type}</motion.span>
+                </motion.p>
+                <motion.p className={styles['item-date']} variants={fadeIn} {...defaultMotionHelper}>
+                  {item.date}
+                </motion.p>
+                <motion.p className={styles['item-description']} variants={slideInFromLeft} {...defaultMotionHelper}>
+                  {item.description}
+                </motion.p>
+                <motion.p className={styles['item-location']} variants={slideInFromBottom} {...defaultMotionHelper}>
                   {item.location}
                   <FontAwesomeIcon icon={faMapMarkerAlt} style={{ marginLeft: 10, color: "#F7882F" }} />
-                </p>
+                </motion.p>
               </div>
             )}
           </Col>
@@ -40,25 +59,30 @@ export default function Education() {
           {/* Vertical Timeline Line */}
           <Col md={2} className={`position-relative ${styles['education-timeline-col']}`}>
             <div className={styles['timeline-line']}>
-              <div className={styles['timeline-dot']}></div>
+              <motion.div className={styles['timeline-dot']} variants={fadeInTimelineDot} {...defaultMotionHelper}></motion.div>
             </div>
           </Col>
 
-          {/* Right Column */}
           <Col md={5} className={styles['education-right-col']}>
             {item.side === 'right' && (
-              <div className={`timeline-item text-start`}>
-                <h5 className={styles['item-institute']}>{item.college}</h5>
-                <hr className={styles['item-hr-right']} />
-                <p className={styles['item-course']}>
-                  {item.course} | <span className={styles['item-type']}>{item.type}</span>
-                </p>
-                <p className={styles['item-date']}>{item.date}</p>
-                <p className={styles['item-description']}>{item.description}</p>
-                <p className={styles['item-location']}>
+              <div className={`${styles['education-item']} text-start`}>
+                <motion.h5 className={styles['item-institute']} variants={slideInFromRight} {...defaultMotionHelper}>
+                  {item.college}
+                </motion.h5>
+                <motion.hr className={styles['item-hr-right']} variants={fadeInHr} {...defaultMotionHelper} custom={0.2}/>
+                <motion.p className={styles['item-title']} variants={slideInFromRight} {...defaultMotionHelper}>
+                  {item.course} | <motion.span className={styles['item-type']} variants={fadeIn} {...defaultMotionHelper} custom={0.3}>{item.type}</motion.span>
+                </motion.p>
+                <motion.p className={styles['item-date']} variants={fadeIn} {...defaultMotionHelper}>
+                  {item.date}
+                </motion.p>
+                <motion.p className={styles['item-description']} variants={slideInFromRight} {...defaultMotionHelper}>
+                  {item.description}
+                </motion.p>
+                <motion.p className={styles['item-location']} variants={slideInFromBottom} {...defaultMotionHelper}>
                   <FontAwesomeIcon icon={faMapMarkerAlt} style={{ marginRight: 10, color: "#F7882F" }} />
                   {item.location}
-                </p>
+                </motion.p>
               </div>
             )}
           </Col>

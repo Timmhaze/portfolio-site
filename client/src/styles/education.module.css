@@ -49,6 +49,10 @@
   font-size: 1.25rem;
 }
 
+.item-title {
+  font-size: 1.25rem;
+}
+
 .item-type {
   color: #F7882F;
 }
@@ -121,13 +125,12 @@
   color: #F7882F;
 }
 
-
 .mobile-education-row {
   min-height: 15rem;
   padding-left: 1rem;
 }
 
-.mobile-item-company {
+.mobile-item-institute {
   font-size: 1.20rem;
   color: #F7882F;
 }

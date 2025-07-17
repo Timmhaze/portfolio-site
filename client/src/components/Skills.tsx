@@ -1,13 +1,24 @@
 import React from 'react';
-import styles from '../styles/skills.module.css';  // assign to a variable
-import { hardSkillsData, softSkillsData, toolsData, languagesData } from '../data/skillsData';
 import { Container, Row, Col } from 'react-bootstrap';
+import styles from '../styles/skills.module.css';  // assign to a variable
+
+import { motion } from 'framer-motion';
+import { slideInFromLeft, slideInFromBottom, slideInFromRight, scaleUp, fadeIn, fadeInHr, fadeInTimelineDot, fadeInStaggered, slideInFromTop } from '../animations/variants';
+
+import { hardSkillsData, softSkillsData, toolsData, languagesData } from '../data/skillsData';
 
 import { faStar as faStarSolid } from '@fortawesome/free-solid-svg-icons';
 import { faStar as faStarRegular } from '@fortawesome/free-regular-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { div } from 'framer-motion/client';
 
 export default function Skills() {
+
+  const defaultMotionHelper = {
+    initial: "hidden",
+    whileInView: "visible",
+    viewport: { once: false, amount: 0.2 }
+  }
 
   return (
     <Container className={styles['skills-container']}>
@@ -15,46 +26,50 @@ export default function Skills() {
       <Row className={styles['skill-list-container-row']}>
         <Col md={5} className={styles['skills-left-col']}>
           <Row className={styles['skills-title-row']}>
-            <h4 className={styles['skills-title']}>Hard Skills</h4>
+            <motion.h4 className={styles['skills-title']} variants={slideInFromTop} {...defaultMotionHelper}>Hard Skills</motion.h4>
             <hr className={styles['skills-hr']}/>
           </Row>
 
-          <h5 className={styles['skill-category']}>Coding</h5>
+          <motion.h5 className={styles['skill-category']} variants={slideInFromLeft} {...defaultMotionHelper} custom={0.4}>Coding</motion.h5>
           {hardSkillsData.map((item, index) => (
-
-          // Thing here
-
-          <Row key={index} className={styles['skills-list-row']}>
-            <Col md={6} sm={6} xs={6} className={styles['skill-name']}>{item.skillName}</Col>
-            <Col md={6} sm={6} xs={6} className={styles['skill-level']}>
+            <Row key={index} className={styles['skills-list-row']}>
+              <Col md={6} sm={6} xs={6}>
+                <motion.p className={styles['skill']} key={index} variants={fadeInStaggered} {...defaultMotionHelper} custom={index}>
+                  {item.skillName}
+                </motion.p>
+              </Col>
+              <Col className={styles['skill-level-col']} md={6} sm={6} xs={6}>
                 {[...Array(5)].map((_, i) => (
-                  <FontAwesomeIcon
-                    key={i}
-                    icon={i < item.skillLevel ? faStarSolid : faStarRegular} // Solid or outline
-                    color={i < item.skillLevel ? "#f7882f" : "#aaa"}
-                  />
+                  <motion.span className={styles['skill-level']} key={i} variants={fadeInStaggered} {...defaultMotionHelper} custom={index}>
+                    <FontAwesomeIcon
+                      icon={i < item.skillLevel ? faStarSolid : faStarRegular}
+                      color={i < item.skillLevel ? "#f7882f" : "#aaa"}
+                    />
+                  </motion.span>
                 ))}
-            </Col>
-          </Row>
+              </Col>
+            </Row>
           ))}
 
-          <h5 className={styles['skill-category']}>Tools</h5>
+          <motion.h5 className={styles['skill-category']} variants={slideInFromLeft} {...defaultMotionHelper} custom={0.4}>Tools</motion.h5>
           {toolsData.map((item, index) => (
-
-          // Thing here
-
-          <Row key={index} className={styles['skills-list-row']}>
-            <Col md={6} sm={6} xs={6} className={styles['skill-name']}>{item.skillName}</Col>
-            <Col md={6} sm={6} xs={6} className={styles['skill-level']}>
+            <Row key={index} className={styles['skills-list-row']}>
+              <Col md={6} sm={6} xs={6}>
+                <motion.p className={styles['skill']} key={index} variants={fadeInStaggered} {...defaultMotionHelper} custom={index}>
+                  {item.skillName}
+                </motion.p>
+              </Col>
+              <Col className={styles['skill-level-col']} md={6} sm={6} xs={6}>
                 {[...Array(5)].map((_, i) => (
-                  <FontAwesomeIcon
-                    key={i}
-                    icon={i < item.skillLevel ? faStarSolid : faStarRegular} // Solid or outline
-                    color={i < item.skillLevel ? "#f7882f" : "#aaa"}
-                  />
+                  <motion.span className={styles['skill-level']} key={i} variants={fadeInStaggered} {...defaultMotionHelper} custom={index}>
+                    <FontAwesomeIcon
+                      icon={i < item.skillLevel ? faStarSolid : faStarRegular}
+                      color={i < item.skillLevel ? "#f7882f" : "#aaa"}
+                    />
+                  </motion.span>
                 ))}
-            </Col>
-          </Row>
+              </Col>
+            </Row>
           ))}
 
         </Col>
@@ -69,46 +84,50 @@ export default function Skills() {
 
         <Col md={5} className={styles['skills-right-col']}>
           <Row className={styles['skills-title-row']}>
-            <h4 className={styles['skills-title']}>Soft Skills</h4>
+            <motion.h4 className={styles['skills-title']} variants={slideInFromTop} {...defaultMotionHelper}>Soft Skills</motion.h4>
             <hr className={styles['skills-hr']}/>
           </Row>
 
-          <h5 className={styles['skill-category']}>Personal Skills</h5>
+          <motion.h5 className={styles['skill-category']} variants={slideInFromLeft} {...defaultMotionHelper} custom={0.4}>Personal Skills</motion.h5>
           {softSkillsData.map((item, index) => (
-
-          // Thing here
-          
-          <Row key={index} className={styles['skills-list-row']}>
-            <Col md={6} sm={6} xs={6} className={styles['skill-name']}>{item.skillName}</Col>
-            <Col md={6} sm={6} xs={6} className={styles['skill-level']}>
+            <Row key={index} className={styles['skills-list-row']}>
+              <Col md={6} sm={6} xs={6}>
+                <motion.p className={styles['skill']} key={index} variants={fadeInStaggered} {...defaultMotionHelper} custom={index}>
+                  {item.skillName}
+                </motion.p>
+              </Col>
+              <Col className={styles['skill-level-col']} md={6} sm={6} xs={6}>
                 {[...Array(5)].map((_, i) => (
-                  <FontAwesomeIcon
-                    key={i}
-                    icon={i < item.skillLevel ? faStarSolid : faStarRegular} // Solid or outline
-                    color={i < item.skillLevel ? "#f7882f" : "#aaa"}
-                  />
+                  <motion.span className={styles['skill-level']} key={i} variants={fadeInStaggered} {...defaultMotionHelper} custom={index}>
+                    <FontAwesomeIcon
+                      icon={i < item.skillLevel ? faStarSolid : faStarRegular}
+                      color={i < item.skillLevel ? "#f7882f" : "#aaa"}
+                    />
+                  </motion.span>
                 ))}
-            </Col>
-          </Row>
+              </Col>
+            </Row>
           ))}
 
-          <h5 className={styles['skill-category']}>Languages</h5>
+          <motion.h5 className={styles['skill-category']} variants={slideInFromLeft} {...defaultMotionHelper} custom={0.4}>Languages</motion.h5>
           {languagesData.map((item, index) => (
-
-          // Thing here
-
-          <Row key={index} className={styles['skills-list-row']}>
-            <Col md={6} sm={6} xs={6} className={styles['skill-name']}>{item.skillName}</Col>
-            <Col md={6} sm={6} xs={6} className={styles['skill-level']}>
+            <Row key={index} className={styles['skills-list-row']}>
+              <Col md={6} sm={6} xs={6}>
+                <motion.p className={styles['skill']} key={index} variants={fadeInStaggered} {...defaultMotionHelper} custom={index}>
+                  {item.skillName}
+                </motion.p>
+              </Col>
+              <Col className={styles['skill-level-col']} md={6} sm={6} xs={6}>
                 {[...Array(5)].map((_, i) => (
-                  <FontAwesomeIcon
-                    key={i}
-                    icon={i < item.skillLevel ? faStarSolid : faStarRegular} // Solid or outline
-                    color={i < item.skillLevel ? "#f7882f" : "#aaa"}
-                  />
+                  <motion.span className={styles['skill-level']} key={i} variants={fadeInStaggered} {...defaultMotionHelper} custom={index}>
+                    <FontAwesomeIcon
+                      icon={i < item.skillLevel ? faStarSolid : faStarRegular}
+                      color={i < item.skillLevel ? "#f7882f" : "#aaa"}
+                    />
+                  </motion.span>
                 ))}
-            </Col>
-          </Row>
+              </Col>
+            </Row>
           ))}
         </Col>
       </Row>
