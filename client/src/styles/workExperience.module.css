@@ -1,14 +1,3 @@
-
-/* /// Component container /// */
-.work-experience-container {
-
-  /* border: 1px dashed green; */
-
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
 /* Header to denote "work experience" section */
 .work-experience-header {
   color: #F7882F;

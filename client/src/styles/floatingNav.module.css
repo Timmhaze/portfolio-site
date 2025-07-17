@@ -1,0 +1,45 @@
+/* FloatingNav.module.css */
+.navContainer {
+  position: fixed;
+  top: 50%;
+  left: 24px;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  z-index: 1000;
+}
+
+.nav-container {
+  flex-direction: row;
+  align-items: center;
+}
+
+.navRow {
+  max-width: 10vw;
+}
+
+.navRow {
+  color: #f7882f;
+  transform: scale(1);
+  transition: background-color 0.3s ease;
+}
+
+.navText {
+  font-size: 0.1rem;
+  margin-bottom: 0.5rem;
+  visibility: hidden;
+}
+
+.navDot {
+  font-size: 0.6rem
+}
+
+.navRow:hover .navDot{
+  font-size: 1rem;
+}
+
+.navRow:hover .navText{
+  font-size: 1.1rem;
+  visibility: visible;
+}

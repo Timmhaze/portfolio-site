@@ -2,6 +2,7 @@
 import { useEffect, useState, useRef } from 'react';
 import { usePageScroller } from '@furman1331/page-scroller';
 
+import FloatingNav from './components/FloatingNav';
 import SectionHeader from './components/SectionHeader';
 import About from './components/About';
 import WorkExperience from './components/WorkExperience';
@@ -72,32 +73,32 @@ function App() {
     //     </section>
     // </div>
 
-  <div>
-    <SectionHeader 
-      title = "Profile"
-      subtitle = "Beep boop computer go brrrrrr"
-    />
-    <About />
-    <SectionHeader 
-      title = "History"
-      subtitle = "Beep boop computer go brrrrrr"
-    />
-    {isMobile ? <WorkExperience_Mobile /> : <WorkExperience />}
+  <>
+    <FloatingNav />
+    <div>
+      <div id="Profile">
+        <SectionHeader title = "Profile" subtitle = "Beep boop computer go brrrrrr" />
+        <About />
+      </div>
 
-    {isMobile ? null : <TimelineDivider />}
-    
-    {isMobile ? <Education_Mobile /> : <Education />}
-    <SectionHeader 
-      title = "Skills"
-      subtitle = "Beep boop computer go brrrrrr"
-    />
-    <Skills />
-    <SectionHeader 
-      title = "Contact"
-      subtitle = "Beep boop computer go brrrrrr"
-    />
-    <Contact />
-  </div>
+      <div id="History">
+        <SectionHeader title = "History" subtitle = "Beep boop computer go brrrrrr" />
+        {isMobile ? <WorkExperience_Mobile /> : <WorkExperience />}
+        {isMobile ? null : <TimelineDivider />}
+        {isMobile ? <Education_Mobile /> : <Education />}
+      </div>
+
+      <div id="Skills">
+        <SectionHeader title = "Skills" subtitle = "Beep boop computer go brrrrrr" />
+        <Skills />
+      </div>
+
+      <div id="Contact">
+        <SectionHeader title = "Contact" subtitle = "Beep boop computer go brrrrrr" />
+        <Contact />
+      </div>
+    </div>
+  </>
   );
 }
 
