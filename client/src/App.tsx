@@ -1,8 +1,10 @@
 //import './App.css';
 import { useEffect, useState, useRef } from 'react';
 import { usePageScroller } from '@furman1331/page-scroller';
+import styles from './App.module.css';
 
 import FloatingNav from './components/FloatingNav';
+import Landing from './components/Landing';
 import SectionHeader from './components/SectionHeader';
 import About from './components/About';
 import WorkExperience from './components/WorkExperience';
@@ -12,7 +14,6 @@ import Education from './components/Education';
 import Education_Mobile from './components/Education_Mobile';
 import Skills from './components/Skills';
 import Contact from './components/Contact';
-
 
 
 function App() {
@@ -75,28 +76,32 @@ function App() {
 
   <>
     <FloatingNav />
-    <div>
-      <div id="Profile">
-        <SectionHeader title = "Profile" subtitle = "Beep boop computer go brrrrrr" />
-        <About />
-      </div>
 
-      <div id="History">
-        <SectionHeader title = "History" subtitle = "Beep boop computer go brrrrrr" />
-        {isMobile ? <WorkExperience_Mobile /> : <WorkExperience />}
-        {isMobile ? null : <TimelineDivider />}
-        {isMobile ? <Education_Mobile /> : <Education />}
-      </div>
+    <div id="Intro">
+      <Landing />
+    </div>
+    
 
-      <div id="Skills">
-        <SectionHeader title = "Skills" subtitle = "Beep boop computer go brrrrrr" />
-        <Skills />
-      </div>
+    <div id="Profile" className={styles['profile-section']}>
+      <SectionHeader title="Profile" subtitle="Beep boop computer go brrrrrr" />
+      <About />
+    </div>
 
-      <div id="Contact">
-        <SectionHeader title = "Contact" subtitle = "Beep boop computer go brrrrrr" />
-        <Contact />
-      </div>
+    <div id="History" className={styles['history-section']}>
+      <SectionHeader title="History" subtitle="Beep boop computer go brrrrrr" />
+      {isMobile ? <WorkExperience_Mobile /> : <WorkExperience />}
+      {isMobile ? null : <TimelineDivider />}
+      {isMobile ? <Education_Mobile /> : <Education />}
+    </div>
+
+    <div id="Skills" className={styles['skills-section']}>
+      <SectionHeader title="Skills" subtitle="Beep boop computer go brrrrrr" />
+      <Skills />
+    </div>
+
+    <div id="Contact" className={styles['contact-section']}>
+      <SectionHeader title="Contact" subtitle="Beep boop computer go brrrrrr" />
+      <Contact />
     </div>
   </>
   );
