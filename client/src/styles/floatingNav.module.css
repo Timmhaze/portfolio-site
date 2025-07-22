@@ -1,4 +1,3 @@
-/* FloatingNav.module.css */
 .navContainer {
   position: fixed;
   top: 50%;
@@ -12,31 +11,40 @@
 
 .navRow {
   max-width: 10vw;
-}
-
-.navRow {
-  color: #f7882f;
+  color: #f7882f; /* default orange */
 }
 
 .navDot {
   display: inline-block;
   transform: scale(0.75);
+  color: #f7882f;
+  transition: color 0.3s ease, transform 0.3s ease;
 }
 
 .navText {
   display: inline-block;
   transform: scale(1);
   text-align: left;
+  color: #f7882f;
+  transition: color 0.3s ease, transform 0.3s ease;
 }
 
-.navRow:hover .navDot{
-  display: inline-block;
+/* Hover effects */
+.navRow:hover .navDot {
   transform: scale(1.25);
   color: #ccc;
 }
 
-.navRow:hover .navText{
-  display: inline-block;
+.navRow:hover .navText {
   transform: scale(1.25);
+  color: #ccc;
+}
+
+/* Active section styles */
+.activeDot {
+  color: #ccc; /* Slightly darker orange */
+}
+
+.activeText {
   color: #ccc;
 }

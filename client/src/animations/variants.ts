@@ -44,14 +44,15 @@ export const slideInFromTop: Variants = {
 // Fade in from bottom
 export const slideInFromBottom: Variants = {
     hidden: { opacity: 0, y: 100 },
-  visible: {
+  visible: (delay = 0) => ({
     opacity: 1,
     y: 0,
     transition: {
       duration: 0.5,
+      delay,
       ease: 'easeInOut',
     },
-  },
+  }),
 };
 
 // Fade in opacity
