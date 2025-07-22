@@ -1,15 +1,3 @@
-/*Utility stuff*/
-
-.nav-dots-col {
-  /* border: 0.01rem dashed red; */
-
-}
-
-.nav-text-col {
-  /* border: 0.01rem dashed blue; */
-
-}
-
 /* FloatingNav.module.css */
 .navContainer {
   position: fixed;

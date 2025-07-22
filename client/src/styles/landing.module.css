@@ -12,9 +12,11 @@
   left: 0;
   width: 100%;
   height: 100vh;
-  /* background: url('../assets/placeholder2.png') center center / cover no-repeat; */
+  background: url('../assets/placeholder.jpeg') center center / cover no-repeat;
   z-index: -1; /* Ensures it's behind everything */
   transform: translateZ(0); /* Helps on some mobile browsers */
+  filter: blur(0.4em);
+
 }
 
 /* Content inside the landing stays scrollable */
@@ -30,5 +32,5 @@
 .title {
   color: #F7882F;
   font-size: 3rem;
-  /* text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6); */
+  text-shadow: 5px 5px 10px rgba(0, 0, 0, 1);
 }
