@@ -21,7 +21,8 @@
     "react": "^19.1.0",
     "react-bootstrap": "^2.10.10",
     "react-dom": "^19.1.0",
-    "react-mega-scroll": "^1.0.19"
+    "react-mega-scroll": "^1.0.19",
+    "react-router-dom": "^7.7.0"
   },
   "devDependencies": {
     "@eslint/js": "^9.25.0",

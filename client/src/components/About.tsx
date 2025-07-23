@@ -4,6 +4,9 @@ import { Row, Col, Container } from 'react-bootstrap';
 import { motion } from 'framer-motion';
 import { slideInFromLeft, slideInFromRight, scaleUp, fadeIn } from '../animations/variants';
 
+/* ROUTE-LINK TO PORTFOLIO PAGE */
+import { Link } from 'react-router-dom';
+
 import styles from '../styles/about.module.css';
 import profile from '../assets/profile.ico';
 
@@ -46,6 +49,7 @@ export default function About() {
                         https://www.linkedin.com/in/timothyhayes95/
                     </motion.p>
                 </a>
+                <Link to="/portfolio">See my work</Link>
             </Col>
         </Row>
     </Container>
