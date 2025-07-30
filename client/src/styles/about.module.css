@@ -27,7 +27,7 @@
 }
 
 .profile-image {
-  border: 5px dashed #e2e0e0;
+  border: 0.3rem dashed #ccc;
   border-radius: 50%;
 }
 

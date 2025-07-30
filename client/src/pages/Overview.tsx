@@ -39,24 +39,24 @@ export default function Overview() {
       </div>
       
       <div id="Profile" className={styles['profile-section']}>
-        <SectionHeader title="Profile" subtitle="Beep boop computer go brrrrrr" />
+        <SectionHeader title="Profile" subtitle="A bit about who I am and what drives me" />
         <About />
       </div>
 
       <div id="History" className={styles['history-section']}>
-        <SectionHeader title="History" subtitle="Beep boop computer go brrrrrr" />
+        <SectionHeader title="History" subtitle="From clueless beginnings to a slightly less clueless now" />
         {isMobile ? <WorkExperience_Mobile /> : <WorkExperience />}
         {isMobile ? null : <TimelineDivider />}
         {isMobile ? <Education_Mobile /> : <Education />}
       </div>
 
       <div id="Skills" className={styles['skills-section']}>
-        <SectionHeader title="Skills" subtitle="Beep boop computer go brrrrrr" />
+        <SectionHeader title="Skills" subtitle="Tools and talents honed over time" />
         <Skills />
       </div>
 
       <div id="Contact" className={styles['contact-section']}>
-        <SectionHeader title="Contact" subtitle="Beep boop computer go brrrrrr" />
+        <SectionHeader title="Contact" subtitle="Open for ideas, questions, and collaborations" />
         <Contact />
       </div>
     </>
