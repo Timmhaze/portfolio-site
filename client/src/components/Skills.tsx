@@ -30,7 +30,11 @@ export default function Skills() {
             <hr className={styles['skills-hr']}/>
           </Row>
 
-          <motion.h5 className={styles['skill-category']} variants={slideInFromLeft} {...defaultMotionHelper} custom={0.4}>Coding</motion.h5>
+          <motion.h5 className={styles['skill-category']} variants={slideInFromLeft} {...defaultMotionHelper} custom={0.4}>
+            Coding
+            <hr className={styles['category-hr']} />
+          </motion.h5>
+
           {hardSkillsData.map((item, index) => (
             <Row key={index} className={styles['skills-list-row']}>
               <Col md={6} sm={6} xs={6}>
@@ -48,10 +52,16 @@ export default function Skills() {
                   </motion.span>
                 ))}
               </Col>
+              <Col className={styles['skill-description-col']}>
+                <p className={styles['skill-description']}>{item.skillDescription}Beepus was here but now he's gone, he left his name to turn you on Beepus was here but now he's gone, he left his name to turn you on</p>
+              </Col>
             </Row>
           ))}
 
-          <motion.h5 className={styles['skill-category']} variants={slideInFromLeft} {...defaultMotionHelper} custom={0.4}>Tools</motion.h5>
+          <motion.h5 className={styles['skill-category']} variants={slideInFromLeft} {...defaultMotionHelper} custom={0.4}>
+            Tools
+            <hr className={styles['category-hr']} />
+          </motion.h5>
           {toolsData.map((item, index) => (
             <Row key={index} className={styles['skills-list-row']}>
               <Col md={6} sm={6} xs={6}>
@@ -68,6 +78,9 @@ export default function Skills() {
                     />
                   </motion.span>
                 ))}
+              </Col>
+              <Col className={styles['skill-description-col']}>
+                <p className={styles['skill-description']}>{item.skillDescription}Beepus was here but now he's gone, he left his name to turn you on Beepus was here but now he's gone, he left his name to turn you on</p>
               </Col>
             </Row>
           ))}
@@ -88,7 +101,10 @@ export default function Skills() {
             <hr className={styles['skills-hr']}/>
           </Row>
 
-          <motion.h5 className={styles['skill-category']} variants={slideInFromLeft} {...defaultMotionHelper} custom={0.4}>Personal Skills</motion.h5>
+          <motion.h5 className={styles['skill-category']} variants={slideInFromLeft} {...defaultMotionHelper} custom={0.4}>
+            Personal Skills
+            <hr className={styles['category-hr']} />
+          </motion.h5>
           {softSkillsData.map((item, index) => (
             <Row key={index} className={styles['skills-list-row']}>
               <Col md={6} sm={6} xs={6}>
@@ -106,10 +122,16 @@ export default function Skills() {
                   </motion.span>
                 ))}
               </Col>
+              <Col className={styles['skill-description-col']}>
+                <p className={styles['skill-description']}>Beepus was here but now he's gone, he left his name to turn you on Beepus was here but now he's gone, he left his name to turn you on</p>
+              </Col>
             </Row>
           ))}
 
-          <motion.h5 className={styles['skill-category']} variants={slideInFromLeft} {...defaultMotionHelper} custom={0.4}>Languages</motion.h5>
+          <motion.h5 className={styles['skill-category']} variants={slideInFromLeft} {...defaultMotionHelper} custom={0.4}>
+            Languages
+            <hr className={styles['category-hr']} />
+          </motion.h5>
           {languagesData.map((item, index) => (
             <Row key={index} className={styles['skills-list-row']}>
               <Col md={6} sm={6} xs={6}>
@@ -126,6 +148,9 @@ export default function Skills() {
                     />
                   </motion.span>
                 ))}
+              </Col>
+              <Col className={styles['skill-description-col']}>
+                <p className={styles['skill-description']}>{item.skillDescription}Beepus was here but now he's gone, he left his name to turn you on Beepus was here but now he's gone, he left his name to turn you on</p>
               </Col>
             </Row>
           ))}

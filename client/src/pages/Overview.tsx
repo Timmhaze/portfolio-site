@@ -38,7 +38,6 @@ export default function Overview() {
         <Landing />
       </div>
       
-
       <div id="Profile" className={styles['profile-section']}>
         <SectionHeader title="Profile" subtitle="Beep boop computer go brrrrrr" />
         <About />

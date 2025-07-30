@@ -100,7 +100,7 @@ export const fadeInStaggered: Variants = {
     opacity: 1,
     x: 0,
     transition: {
-      delay: i * 0.07, // adjust timing here
+      delay: i * 0.06, // adjust timing here
       duration: 0.5,
       ease: 'easeOut',
     }

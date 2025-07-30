@@ -12,7 +12,7 @@
 
 .skills-hr {
   margin-top: 0.1rem;
-  margin-bottom: rem;
+  margin-bottom: 1rem;
 }
 
 .skill-category {
@@ -23,18 +23,55 @@
   margin-top: 1.5rem;
 }
 
+.category-hr {
+  border: 0.12rem dashed #ccc;
+}
+
 .skill {
   margin-top: 0rem;
   margin-bottom: 0rem;
 }
 
 .skills-list-row {
-  margin-top: 0.3rem;
-  margin-bottom: 0.3rem;
+  margin: none;
 }
 
 .skills-list-row:hover {
   color: #F7882F;
+}
+
+.skill-description-col {
+  padding-left: 1rem;
+  padding-top: 0.5rem;
+}
+
+.skill-description {
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  transform: translateY(25px);
+  transition:
+    max-height 0.4s ease,
+    opacity 0.3s ease,
+    transform 0.4s ease;
+  pointer-events: none;
+  position: relative;
+  padding-left: 1rem;
+  padding-top: 0.40rem;
+  border-left: 1px solid orange;
+  width: 100%;
+  color: rgb(141, 141, 141);
+  font-size: 1rem;
+  font-style: italic;
+  z-index: 1;
+}
+
+.skills-list-row:hover .skill-description {
+  opacity: 1;
+  transform: translateY(0);
+  max-height: 5rem;
+  pointer-events: auto;
+  transition-delay: 0.5s;
 }
 
 .skill-level-col {
@@ -44,6 +81,7 @@
 .skill-level {
   font-size: 0.9rem;
 }
+
 
 
 .skills-divider-col {
