@@ -5,8 +5,9 @@
   transform: translateY(-50%);
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 5px;
   z-index: 1000;
+  max-width: 10vw;
 }
 
 .navRow {
