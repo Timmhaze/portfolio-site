@@ -22,13 +22,18 @@ export default function About() {
     <Container className={styles['about-container']}>
         <Row>
             <Col lg={4} md={12} sm={12}>
-                <motion.h2 className={styles['about-me-header']} variants={slideInFromLeft} {...defaultMotionHelper}>About me</motion.h2>
+                <motion.h2 className={styles['about-me-header']} variants={slideInFromLeft} {...defaultMotionHelper}>
+                    About me
+                    <hr className={styles["details-hr"]}/>
+                </motion.h2>
                 <motion.p className={styles['about-me-content']} variants={fadeIn} {...defaultMotionHelper} custom={0.2}>
-                    I am a freelance Web Designer and Full Stack Developer with a practical, ordered approach to building focused and well-designed websites. 
-                    My passion for interactive graphics drives me to create experiences that are not only functional but also visually engaging through thoughtful use of animation. 
-                    I recently completed my degree (BSc. Hons) in Creative Computing at IADT, graduating with a 2.1. Along the way, I’ve developed a strong appreciation for clean code, 
-                    intuitive UX, and the small design choices that bring a site to life. I’m always looking to grow my skills and take on projects that challenge both logic and creativity.
+                    Hi, I’m a freelance Web Designer and Full Stack Developer with a practical, detail-focused approach to crafting clean, well-designed websites.
+                    Over the years, I’ve built up a solid skill set across both front-end and back-end technologies, and I’m especially passionate about interactive 
+                    graphics and animation that bring interfaces to life.
+                    I care deeply about clean, readable code and intuitive UX. I focus on thoughtful design that makes a site feel effortless to use.
+                    When I’m not coding, I enjoy experimenting with new ideas, learning tools that push creative boundaries, and fine-tuning the small details that make a big difference.
                 </motion.p>
+                <hr className={styles["details-hr"]}/>
             </Col>
             <Col className={styles['profile-image-col']} lg={4} md={12} sm={12}>
                 <motion.img className={styles['profile-image']} src={profile} alt="thayes-image" variants={scaleUp} {...defaultMotionHelper}/> 
@@ -36,11 +41,12 @@ export default function About() {
             <Col lg={4} md={12} sm={12}>
                 <motion.h2 className={styles['details-header']} variants={slideInFromRight} {...defaultMotionHelper}>
                     Details
+                    <hr className={styles["details-hr"]}/>
                 </motion.h2>
                 <motion.p className={styles['details-subheader']} variants={fadeIn} {...defaultMotionHelper}>Name:</motion.p>
                 <motion.p className={styles['details-content']} variants={slideInFromRight} {...defaultMotionHelper} custom={0.5}>Timothy Hayes</motion.p>
-                <motion.p className={styles['details-subheader']} variants={fadeIn} {...defaultMotionHelper}>Date of Birth:</motion.p>
-                <motion.p className={styles['details-content']} variants={slideInFromRight} {...defaultMotionHelper} custom={0.5}>20-12-1995</motion.p>
+                <motion.p className={styles['details-subheader']} variants={fadeIn} {...defaultMotionHelper}>Age:</motion.p>
+                <motion.p className={styles['details-content']} variants={slideInFromRight} {...defaultMotionHelper} custom={0.5}>29 Years Old</motion.p>
                 <motion.p className={styles['details-subheader']}variants={fadeIn} {...defaultMotionHelper}>Location:</motion.p>
                 <motion.p className={styles['details-content']} variants={slideInFromRight} {...defaultMotionHelper} custom={0.5}>Prague, Czech Republic</motion.p>
                 <motion.p className={styles['details-subheader']} variants={fadeIn} {...defaultMotionHelper}>My LinkedIn:</motion.p>
@@ -49,7 +55,7 @@ export default function About() {
                         https://www.linkedin.com/in/timothyhayes95/
                     </motion.p>
                 </a>
-                <Link to="/portfolio">See my work</Link>
+                {/* <Link to="/portfolio">See my work</Link> */}
             </Col>
         </Row>
     </Container>
