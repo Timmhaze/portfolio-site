@@ -23,7 +23,7 @@ const experienceData = [
         company: 'Houghton Mifflin Harcourt',
         type: 'Fulltime',
         date: '2020 ~ 2022',
-        description: "In the midst of the COVID-19 pandemic, I secured my first role out of college as a Frontend Developer contracted by Houghton Mifflin Harcourt. Over several months, I contributed to their children’s education platform, Waggle. My work included creating particle effects using Unreal Engine to enhance interactive content, developing browser-based 3D scenes with Three.js themed around the four seasons, and building immersive 3D panoramic historical scenes that run directly in the browser - combining education with engaging visuals. I found this work incredibly enjoyable and rewarding, as it allowed me to deepen my technical skills while contributing to meaningful educational projects.",
+        description: "In the midst of the COVID-19 pandemic, I secured my first role out of college as a Frontend Developer contracted by Houghton Mifflin Harcourt. During my time there, I contributed to their children’s education platform, Waggle. My work included creating particle effects using Unreal Engine to enhance interactive content, developing browser-based 3D scenes with Three.js themed around various seasons and settings, and building immersive 3D panoramic historical scenes that run directly in the browser - combining education with engaging visuals. I found this work incredibly enjoyable and rewarding, as it allowed me to deepen my technical skills while contributing to meaningful educational projects.",
         location: 'Dublin, Ireland'
     },
     {

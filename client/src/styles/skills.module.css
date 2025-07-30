@@ -1,6 +1,8 @@
 
 .skills-container {
   padding-bottom: 15rem;
+  margin-left: none;
+  margin-right: none;
 }
 
 .skills-title {
