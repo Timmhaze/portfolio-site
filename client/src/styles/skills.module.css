@@ -24,7 +24,7 @@
 }
 
 .category-hr {
-  border: 0.12rem dashed #ccc;
+  border: 0.12rem dashed #c7c8c9;
 }
 
 .skill {
@@ -71,7 +71,7 @@
   transform: translateY(0);
   max-height: 5rem;
   pointer-events: auto;
-  transition-delay: 0.5s;
+  transition-delay: 0.05s;
 }
 
 .skill-level-col {

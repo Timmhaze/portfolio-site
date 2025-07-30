@@ -53,7 +53,7 @@ export default function Skills() {
                 ))}
               </Col>
               <Col className={styles['skill-description-col']}>
-                <p className={styles['skill-description']}>{item.skillDescription}Beepus was here but now he's gone, he left his name to turn you on Beepus was here but now he's gone, he left his name to turn you on</p>
+                <p className={styles['skill-description']}>{item.skillDescription}</p>
               </Col>
             </Row>
           ))}
@@ -80,7 +80,7 @@ export default function Skills() {
                 ))}
               </Col>
               <Col className={styles['skill-description-col']}>
-                <p className={styles['skill-description']}>{item.skillDescription}Beepus was here but now he's gone, he left his name to turn you on Beepus was here but now he's gone, he left his name to turn you on</p>
+                <p className={styles['skill-description']}>{item.skillDescription}</p>
               </Col>
             </Row>
           ))}
@@ -123,7 +123,7 @@ export default function Skills() {
                 ))}
               </Col>
               <Col className={styles['skill-description-col']}>
-                <p className={styles['skill-description']}>Beepus was here but now he's gone, he left his name to turn you on Beepus was here but now he's gone, he left his name to turn you on</p>
+                <p className={styles['skill-description']}>{item.skillDescription}</p>
               </Col>
             </Row>
           ))}
@@ -150,7 +150,7 @@ export default function Skills() {
                 ))}
               </Col>
               <Col className={styles['skill-description-col']}>
-                <p className={styles['skill-description']}>{item.skillDescription}Beepus was here but now he's gone, he left his name to turn you on Beepus was here but now he's gone, he left his name to turn you on</p>
+                <p className={styles['skill-description']}>{item.skillDescription}</p>
               </Col>
             </Row>
           ))}
