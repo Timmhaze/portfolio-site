@@ -1,10 +1,8 @@
-import React from 'react'
-
 import styles from '../styles/sectionHeader.module.css';
 import { Container, Row, Col } from 'react-bootstrap';
 import { motion } from 'framer-motion';
 
-import { slideInFromTop, fadeIn } from '../animations/variants';
+import { fadeIn } from '../animations/variants';
 
 type SectionHeaderProps = {
     title: string;

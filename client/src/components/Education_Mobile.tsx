@@ -1,9 +1,8 @@
-import React from 'react'
 import { Container, Row, Col } from 'react-bootstrap';
 import styles from '../styles/education.module.css';
 
 import { motion } from 'framer-motion';
-import { slideInFromLeft, slideInFromBottom, slideInFromRight, scaleUp, fadeIn, fadeInHr, fadeInTimelineDot } from '../animations/variants';
+import { slideInFromRight, fadeIn, fadeInHr, fadeInTimelineDot } from '../animations/variants';
 
 import educationData from '../data/educationData.ts';
 

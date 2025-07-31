@@ -1,5 +1,3 @@
-import React from 'react'
-
 import styles from '../styles/timelineDiv.module.css';
 import { Container, Row, Col } from 'react-bootstrap';
 

@@ -1,16 +1,14 @@
-import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import styles from '../styles/skills.module.css';  // assign to a variable
 
 import { motion } from 'framer-motion';
-import { slideInFromLeft, slideInFromBottom, slideInFromRight, scaleUp, fadeIn, fadeInHr, fadeInTimelineDot, fadeInStaggered, slideInFromTop } from '../animations/variants';
+import { slideInFromLeft, fadeInStaggered, slideInFromTop } from '../animations/variants';
 
 import { hardSkillsData, softSkillsData, toolsData, languagesData } from '../data/skillsData';
 
 import { faStar as faStarSolid } from '@fortawesome/free-solid-svg-icons';
 import { faStar as faStarRegular } from '@fortawesome/free-regular-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { div } from 'framer-motion/client';
 
 export default function Skills() {
 

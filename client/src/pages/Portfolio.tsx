@@ -1,5 +1,3 @@
-import React from 'react'
-
 /* ROUTE-LINK TO PORTFOLIO PAGE */
 import { Link } from 'react-router-dom';
 

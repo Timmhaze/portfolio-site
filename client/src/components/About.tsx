@@ -1,11 +1,10 @@
-import React from 'react'
 import { Row, Col, Container } from 'react-bootstrap';
 
 import { motion } from 'framer-motion';
 import { slideInFromLeft, slideInFromRight, scaleUp, fadeIn } from '../animations/variants';
 
 /* ROUTE-LINK TO PORTFOLIO PAGE */
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 
 import styles from '../styles/about.module.css';
 import profile from '../assets/profile.ico';

@@ -1,9 +1,8 @@
-import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import styles from '../styles/contact.module.css';
 
 import { motion } from 'framer-motion';
-import { slideInFromLeft, slideInFromRight, scaleUp, fadeIn, slideInFromBottom } from '../animations/variants';
+import { slideInFromLeft, slideInFromRight, fadeIn, slideInFromBottom } from '../animations/variants';
 
 
 export default function Contact() {
