@@ -32,7 +32,7 @@ export default function Overview() {
 
   return (
     <>
-      <FloatingNav />
+      {isMobile ? null : <FloatingNav />}
 
       <div id="Intro">
         <Landing />
