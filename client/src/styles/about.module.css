@@ -130,9 +130,9 @@ a {
 
 @media (max-width: 768px) {
   .about-container {
-    margin-bottom: 6rem; /* less huge spacing on mobile */
     justify-content: flex-start;
     min-height: auto;
+    padding-bottom: 0rem;
   }
 
   .about-me-header,
