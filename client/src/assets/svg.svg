@@ -1,0 +1,15 @@
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+
+ <g>
+  <title>Layer 1</title>
+  <g stroke="null" id="svg_11">
+   <line stroke="#f7882f" stroke-width="5" stroke-linecap="undefined" stroke-linejoin="undefined" id="svg_3" y2="733.39594" x2="63.17678" y1="-218.872" x1="542.16185" fill="none"/>
+   <line stroke="#f7882f" stroke-width="5" stroke-linecap="undefined" stroke-linejoin="undefined" id="svg_4" y2="733.39594" x2="63.17678" y1="-218.872" x1="542.16185" fill="none"/>
+   <line stroke="#f7882f" stroke-dasharray="5,2,2,2,2,2" stroke-width="2" stroke-linecap="undefined" stroke-linejoin="undefined" id="svg_5" y2="747.27776" x2="994.94117" y1="-218.2047" x1="543.18402" fill="none"/>
+   <line stroke="#f7882f" stroke-width="5" stroke-linecap="undefined" stroke-linejoin="undefined" id="svg_6" y2="733.39594" x2="63.17678" y1="-218.872" x1="542.16185" fill="none"/>
+   <line stroke="#f7882f" stroke-dasharray="5,5" stroke-width="7" stroke-linecap="undefined" stroke-linejoin="undefined" id="svg_7" y2="115.04152" x2="-174.45899" y1="120.31309" x1="1238.35152" fill="none"/>
+   <line stroke="#f7882f" stroke-dasharray="2,2" stroke-width="5" stroke-linecap="undefined" stroke-linejoin="undefined" id="svg_9" y2="744.16677" x2="992.7063" y1="116.22044" x1="-168.85361" fill="none"/>
+   <line stroke="#f7882f" stroke-width="5" stroke-linecap="undefined" stroke-linejoin="undefined" id="svg_10" y2="120.4443" x2="1236.2819" y1="731.49521" x1="64.86632" fill="none"/>
+  </g>
+ </g>
+</svg>

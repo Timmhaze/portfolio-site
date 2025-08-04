@@ -26,7 +26,7 @@ export default function About() {
                     <hr className={styles["details-hr"]}/>
                 </motion.h2>
                 <motion.p className={styles['about-me-content']} variants={fadeIn} {...defaultMotionHelper} custom={0.2}>
-                    Hi, I’m a freelance Web Designer and Full Stack Developer with a practical, detail-focused approach to crafting clean, well-designed websites.
+                    I’m a freelance Web Designer and Full Stack Developer with a practical, detail-focused approach to crafting clean, well-designed websites.
                     Over the years, I’ve built up a solid skill set across both front-end and back-end technologies, and I’m especially passionate about interactive 
                     graphics and animation that bring interfaces to life.
                     I care deeply about clean, readable code and intuitive UX. I focus on thoughtful design that makes a site feel effortless to use.
@@ -47,7 +47,7 @@ export default function About() {
                 <motion.p className={styles['details-subheader']} variants={fadeIn} {...defaultMotionHelper}>Age:</motion.p>
                 <motion.p className={styles['details-content']} variants={slideInFromRight} {...defaultMotionHelper} custom={0.5}>29 Years Old</motion.p>
                 <motion.p className={styles['details-subheader']}variants={fadeIn} {...defaultMotionHelper}>Location:</motion.p>
-                <motion.p className={styles['details-content']} variants={slideInFromRight} {...defaultMotionHelper} custom={0.5}>Prague, Czech Republic</motion.p>
+                <motion.p className={styles['details-content']} variants={slideInFromRight} {...defaultMotionHelper} custom={0.5}>Bojanovice, Czech Republic</motion.p>
                 <motion.p className={styles['details-subheader']} variants={fadeIn} {...defaultMotionHelper}>My LinkedIn:</motion.p>
                 <a href="https://www.linkedin.com/in/timothyhayes95/">
                     <motion.p className={`${styles['details-subheader']} ${styles['linkedin-link']}`} variants={fadeIn} {...defaultMotionHelper} custom={0.5}>
