@@ -20,7 +20,14 @@ export default function Skills() {
 
   return (
     <Container className={styles['skills-container']}>
-      
+      <Row>
+        <Col>
+          <p className={styles['skill-level-desc']}>
+            Self-assessment can be tricky—rate too high and it sounds arrogant; too low and it sells you short. This section reflects an honest self-evaluation based on real-world experience and personal confidence.
+            To clarify my scale: one star means "I’m familiar with this," while five stars means "I’m highly capable, use this daily, and could confidently teach others." Hover or tap a skill to see more detail.
+          </p>
+        </Col>
+      </Row>
       <Row className={styles['skill-list-container-row']}>
         <Col md={5} className={styles['skills-left-col']}>
           <Row className={styles['skills-title-row']}>

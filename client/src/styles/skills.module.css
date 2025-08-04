@@ -5,6 +5,14 @@
   margin-right: none;
 }
 
+.skill-level-desc {
+  text-align: center;
+  margin-bottom: 3rem;
+  font-weight: lighter;
+  font-style: italic;
+  font-size: 0.96rem;
+}
+
 .skills-title {
   font-size: 1.6rem;
   margin-bottom: 1rem;
