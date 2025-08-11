@@ -109,16 +109,14 @@ export const fadeInStaggered: Variants = {
 
 // Scale up
 export const scaleUp: Variants = {
-  hidden: {
-    opacity: 0,
-    scale: 0.2,
-  },
-  visible: {
+  hidden: { opacity: 0, scale: 0.2 },
+  visible: (delay = 0) => ({
     opacity: 1,
     scale: 1,
     transition: {
       duration: 0.5,
+      delay,
       ease: 'easeOut',
-    },
-  },
+    }
+  })
 };

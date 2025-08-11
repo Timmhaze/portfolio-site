@@ -1,18 +1,25 @@
 .navContainer {
   position: fixed;
+  background-color: white;
+  padding-top: 1rem;
   top: 50%;
-  left: 24px;
+  border-radius: 4px;
+  /* left: 24px; */
   transform: translateY(-50%);
   display: flex;
   flex-direction: column;
   gap: 5px;
   z-index: 1000;
-  max-width: 10vw;
+  max-width: 7vw;
 }
 
 .navRow {
   max-width: 10vw;
   color: #f7882f; /* default orange */
+}
+
+.nav-dots-col {
+  margin-left: 1rem;
 }
 
 .navDot {

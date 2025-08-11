@@ -1,0 +1,145 @@
+/* Text containers */
+
+.name-container-left {
+    background-color: #F7882F;
+    display: flex;
+    justify-content: flex-end; /* align text flush right to boundary */
+    padding-right: 2rem;
+    white-space: nowrap;
+    overflow: hidden;
+    font-size: 6rem;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+    user-select: none;
+}
+
+.name-container-middle {
+    background-color: white; /* or whatever your middle col background is */
+    display: flex;
+    justify-content: flex-start; /* align text flush left to boundary */
+    padding-left: 1rem;
+    white-space: nowrap;
+    overflow: hidden;
+    font-size: 5rem;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+    user-select: none;
+}
+
+.subtitle-container-middle {
+    background-color: white; /* or whatever your middle col background is */
+    display: flex;
+    justify-content: flex-start; /* align text flush left to boundary */
+    padding-left: 1rem;
+    padding-top: 0.5rem;
+    white-space: nowrap;
+    overflow: hidden;
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+    user-select: none;
+}
+
+/* Individual words */
+
+.f-name {
+    padding-top: 15%;
+    color: white;
+    display: inline-block;
+}
+
+.s-name {
+    color: #F7882F;
+    display: inline-block;
+}
+
+.subtitle {
+    color: #F7882F;
+    display: inline-block;
+}
+
+
+
+/* Left column */
+
+.left-col {
+    background-color: #F7882F;
+    min-height: 100vh;
+}
+
+.white-bar-row-top {
+    margin-top: 7vh;
+}
+
+.row-white-bars {
+    margin-top: 1rem;
+}
+
+.white-bar {
+    background-color: white;
+    height: 2rem;
+    width: 80%;
+    max-width: 27rem;
+}
+
+/* Middle column */
+
+.middle-col {
+    padding-left: 5%;
+    padding-top: 25vh;
+}
+
+.mid-orange-box {
+    background-color: #F7882F;
+    margin-left: 1%;
+    width: 80%;
+    max-width: 50rem;
+    height: auto;
+    aspect-ratio: 25 / 15;
+    border-radius: 8px;
+}   
+
+.mid-grey-box-one,
+.mid-grey-box-two,
+.mid-grey-box-three {
+    background-color: #ccc;
+    height: 1rem;
+    border-radius: 15px;
+    margin-top: 1rem;
+    margin-left: 10%;
+}
+
+.mid-grey-box-one {
+    background-color: #b1b0b0;
+    width: 50%;
+    max-width: 20rem;
+    margin-top: 1rem;
+}
+
+.mid-grey-box-two {
+    width: 70%;
+    max-width: 30rem;
+}
+
+.mid-grey-box-three {
+    width: 55%;
+    max-width: 16rem;
+}
+
+/* Right column */
+
+.right-col {
+    margin-top: 50vh;
+}
+
+.row-orange-bars {
+    margin-top: 1rem;
+}   
+
+.orange-bar {
+    background-color: #F7882F;
+    height: 2rem;
+    margin-left: auto;
+    width: 80%;
+    max-width: 47.3rem;
+}
