@@ -16,7 +16,7 @@ export default function Education() {
   const defaultMotionHelper = {
     initial: "hidden",
     whileInView: "visible",
-    viewport: { once: false, amount: 0.2 } // controls re-trigger behavior
+    viewport: { once: false, amount: 0.2 }
   }
 
   return (

@@ -21,7 +21,7 @@ export default function FloatingNav() {
         const element = document.getElementById(section);
         if (element) {
           const rect = element.getBoundingClientRect();
-          if (rect.top <= window.innerHeight * 0.2) {
+          if (rect.top <= window.innerHeight * 0.2) { // Adjust mutliplied value for detecting how far down the screen counts as a section
             currentSection = section;
           }
         }
@@ -42,15 +42,15 @@ export default function FloatingNav() {
   };
 
   return (
-    <Container className={styles.navContainer}>
+    <Container className={styles['nav-container']}>
       {sections.map((section, index) => (
         <a key={index} href={`#${section}`}>
-          <Row className={styles.navRow}>
+          <Row className={styles['nav-row']}>
             <Col className={styles['nav-dots-col']} md={2}>
               <motion.div variants={fadeIn} {...defaultMotionHelper} custom={0.3 * index}>
                 <FontAwesomeIcon
-                  className={`${styles.navDot} ${
-                    activeSection === section ? styles.activeDot : ''
+                  className={`${styles['nav-dot']} ${
+                    activeSection === section ? styles['active-dot'] : ''
                   }`}
                   icon={faCircle}
                 />
@@ -59,8 +59,8 @@ export default function FloatingNav() {
             <Col className={styles['nav-text-col']} md={2}>
               <motion.div variants={slideInFromRight} {...defaultMotionHelper} custom={0.3 * index}>
                 <p
-                  className={`${styles.navText} ${
-                    activeSection === section ? styles.activeText : ''
+                  className={`${styles['nav-text']} ${
+                    activeSection === section ? styles['active-text'] : ''
                   }`}
                 >
                   {section}

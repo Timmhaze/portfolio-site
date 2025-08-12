@@ -11,7 +11,6 @@ export default function TimelineDivider_Mobile() {
         
         </Col>
       </Row>
-      {/*/////////////////////////////////////////////////////////*/}
     </Container>
   )
 }

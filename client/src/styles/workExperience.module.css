@@ -1,4 +1,4 @@
-/* Header to denote "work experience" section */
+/* /// Header /// */
 .work-experience-header {
   color: #F7882F;
 }
@@ -12,13 +12,13 @@
 
 /* /// Timeline item /// */
 
-.item-hr-left { /* Left side horizontal rule */
+.item-hr-left {
   max-width: 75%;
   margin-left: 10rem;
   margin-right: 0px;
 }
 
-.item-hr-right { /* Right side horizontal rule */
+.item-hr-right {
   max-width: 75%;
   margin-left: 0px;
 }
@@ -84,8 +84,8 @@
 }
 
 
-/*===//////////////////////////// Mobile component styles ////////////////////////////===*/
-          /* /// These styles are for a mobile version of the WE component /// */
+/* /// Responsive Media Styles /// */
+/* /// These styles are for a mobile version of the Work Experience component, rather than being in their own file /// */
 
 .mobile-work-experience-container {
   display: flex;
@@ -158,7 +158,7 @@
 
 .mobile-work-experience-timeline-col {
   display: flex;
-  align-items: stretch; /* Ensures full vertical height */
+  align-items: stretch;
   position: relative;
 }
 
@@ -167,7 +167,7 @@
   top: 0;
   bottom: 0;
   width: 4px;
-  background-color: #F7882F; /* or your preferred color */
+  background-color: #F7882F;
   height: 100%;
   transform: translateX(-50%);
 }

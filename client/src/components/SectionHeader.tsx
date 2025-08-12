@@ -7,7 +7,7 @@ import { fadeIn } from '../animations/variants';
 type SectionHeaderProps = {
     title: string;
     subtitle: string;
-    backgroundColor?: string; // Optional prop for background color
+    backgroundColor?: string;
 }
 
 export default function SectionHeader({ title, subtitle, backgroundColor}: SectionHeaderProps) {
@@ -18,23 +18,21 @@ export default function SectionHeader({ title, subtitle, backgroundColor}: Secti
                 <hr className={styles['header-wing-left-hr']}/>
             </Col>
             <Col md={4}>
-
                 <motion.h1
                     className={styles['section-header']}
                     variants={fadeIn}
                     initial="hidden"
                     whileInView="visible"
-                    viewport={{ once: false, amount: 0.2 }} // controls re-trigger behavior
+                    viewport={{ once: false, amount: 0.2 }}
                 >
                     {title}
                 </motion.h1>
-
                 <motion.p 
                     className={styles['section-subheader']}
                     variants={fadeIn}
                     initial="hidden"
                     whileInView="visible"
-                    viewport={{ once: false, amount: 0.2 }} // controls re-trigger behavior
+                    viewport={{ once: false, amount: 0.2 }}
                 >
                     {subtitle}
                 </motion.p>
@@ -43,7 +41,6 @@ export default function SectionHeader({ title, subtitle, backgroundColor}: Secti
                 <hr className={styles['header-wing-right-hr']}/>
             </Col>
         </Row>
-        {/* <hr className={styles['section-header-hr']}/> */}
     </Container>
   )
 }

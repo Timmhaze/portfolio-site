@@ -2,7 +2,6 @@ import { useEffect, useState } from 'react';
 import styles from '../App.module.css';
 
 import FloatingNav from '../components/FloatingNav';
-import Landing from '../components/Landing';
 import LandingPage from '../components/LandingPage';
 import SectionHeader from '../components/SectionHeader';
 import About from '../components/About';

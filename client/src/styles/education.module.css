@@ -1,15 +1,12 @@
-
 /* /// Component container /// */
+
 .education-container {
-
-  /* border: 1px dashed purple; */
-
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
-/* Header to denote "education" section */
+/* /// Header /// */
 
 .header-col {
   padding-left: 25px;
@@ -29,13 +26,13 @@
 
 /* /// Timeline item /// */
 
-.item-hr-left { /* Left side horizontal rule */
+.item-hr-left { 
   max-width: 75%;
   margin-right: 0px;
   margin-left: 10rem;
 }
 
-.item-hr-right { /* Right side horizontal rule */
+.item-hr-right { 
   max-width: 75%;
   margin-left: 0px;
 }
@@ -176,7 +173,7 @@
 
 .mobile-education-timeline-col {
   display: flex;
-  align-items: stretch; /* Ensures full vertical height */
+  align-items: stretch;
   position: relative;
 }
 
@@ -185,7 +182,7 @@
   top: 0;
   bottom: 0;
   width: 4px;
-  background-color: #F7882F; /* or your preferred color */
+  background-color: #F7882F;
   height: 100%;
   transform: translateX(-50%);
 }

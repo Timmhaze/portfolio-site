@@ -7,7 +7,6 @@ export default function TimelineDivider() {
       <Row>
         <Col md={5} className={styles['timeline-divider-col']}>
           <div className={`timeline-divider-item text-end ${styles['timeline-divider-item']}`}>
-            {/* ************** */}
           </div>
         </Col>
 
@@ -19,12 +18,10 @@ export default function TimelineDivider() {
 
         <Col md={5} className={styles['timeline-divider-col']}>
           <div className={`timeline-divider-item text-start ${styles['timeline-divider-item']}`}>
-            {/* ************** */}
           </div>
         </Col>
       </Row>
 
-      {/*/////////////////////////////////////////////////////////*/}
     </Container>
   );
 }

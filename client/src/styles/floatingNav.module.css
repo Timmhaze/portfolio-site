@@ -1,10 +1,9 @@
-.navContainer {
+.nav-container {
   position: fixed;
   background-color: white;
   padding-top: 1rem;
   top: 50%;
   border-radius: 4px;
-  /* left: 24px; */
   transform: translateY(-50%);
   display: flex;
   flex-direction: column;
@@ -13,23 +12,23 @@
   max-width: 7vw;
 }
 
-.navRow {
+.nav-row {
   max-width: 10vw;
-  color: #f7882f; /* default orange */
+  color: #f7882f;
 }
 
 .nav-dots-col {
   margin-left: 1rem;
 }
 
-.navDot {
+.nav-dot {
   display: inline-block;
   transform: scale(0.75);
   color: #f7882f;
   transition: color 0.3s ease, transform 0.3s ease;
 }
 
-.navText {
+.nav-text {
   display: inline-block;
   transform: scale(1);
   text-align: left;
@@ -38,21 +37,21 @@
 }
 
 /* Hover effects */
-.navRow:hover .navDot {
+.navRow:hover .nav-dot {
   transform: scale(1.25);
   color: #ccc;
 }
 
-.navRow:hover .navText {
+.navRow:hover .nav-text {
   transform: scale(1.25);
   color: #ccc;
 }
 
 /* Active section styles */
-.activeDot {
+.active-dot {
   color: #ccc; /* Slightly darker orange */
 }
 
-.activeText {
+.active-text {
   color: #ccc;
 }

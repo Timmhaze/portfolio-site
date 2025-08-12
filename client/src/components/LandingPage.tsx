@@ -49,7 +49,7 @@ export default function LandingPage() {
         </Col>
 
         <Col md={4} className={styles['right-col']}>
-            {Array.from({ length: 13 }).map((_, i) => (
+            {Array.from({ length: 12 }).map((_, i) => (
                 <Row key={i} className={styles['row-orange-bars']}>
                     <motion.div className={styles['orange-bar']} variants={slideInFromBottom} {...defaultMotionHelper} custom={i / 7}></motion.div>
                 </Row>

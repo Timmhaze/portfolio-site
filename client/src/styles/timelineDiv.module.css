@@ -1,7 +1,5 @@
 /* /// Timeline /// */
 .timeline-divider-container {
-  /* border: 1px dashed blue; */
-
   display: flex;
   flex-direction: column;
   min-height: 12vh;
@@ -17,7 +15,7 @@
   transform: translateX(-50%);
 }
 
-/* Add arrowhead at the bottom */
+/* /// Arrow head at bottom of dashed line /// */
 .timeline-divider-line-dashed::after {
   content: "";
   position: absolute;

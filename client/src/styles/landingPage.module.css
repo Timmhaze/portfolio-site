@@ -1,23 +1,10 @@
-/* Text containers */
+/* /// Text containers /// */
 
 .name-container-left {
     background-color: #F7882F;
     display: flex;
-    justify-content: flex-end; /* align text flush right to boundary */
-    padding-right: 2rem;
-    white-space: nowrap;
-    overflow: hidden;
-    font-size: 6rem;
-    font-weight: bold;
-    font-family: Arial, sans-serif;
-    user-select: none;
-}
-
-.name-container-middle {
-    background-color: white; /* or whatever your middle col background is */
-    display: flex;
-    justify-content: flex-start; /* align text flush left to boundary */
-    padding-left: 1rem;
+    justify-content: flex-end; 
+    padding-right: 4rem;
     white-space: nowrap;
     overflow: hidden;
     font-size: 5rem;
@@ -26,10 +13,24 @@
     user-select: none;
 }
 
-.subtitle-container-middle {
-    background-color: white; /* or whatever your middle col background is */
+.name-container-middle {
+    background-color: white; 
     display: flex;
-    justify-content: flex-start; /* align text flush left to boundary */
+    justify-content: flex-start;
+    padding-top: 1rem;
+    padding-left: 3rem;
+    white-space: nowrap;
+    overflow: hidden;
+    font-size: 6rem;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+    user-select: none;
+}
+
+.subtitle-container-middle {
+    background-color: white; 
+    display: flex;
+    justify-content: flex-start; 
     padding-left: 1rem;
     padding-top: 0.5rem;
     white-space: nowrap;
@@ -40,7 +41,7 @@
     user-select: none;
 }
 
-/* Individual words */
+/* /// First/Surname + Subtitle /// */
 
 .f-name {
     padding-top: 15%;
@@ -59,8 +60,7 @@
 }
 
 
-
-/* Left column */
+/* /// Left column /// */
 
 .left-col {
     background-color: #F7882F;
@@ -82,7 +82,7 @@
     max-width: 27rem;
 }
 
-/* Middle column */
+/* /// Middle Column /// */
 
 .middle-col {
     padding-left: 5%;
@@ -92,7 +92,7 @@
 .mid-orange-box {
     background-color: #F7882F;
     margin-left: 1%;
-    width: 80%;
+    width: 100%;
     max-width: 50rem;
     height: auto;
     aspect-ratio: 25 / 15;
@@ -126,10 +126,10 @@
     max-width: 16rem;
 }
 
-/* Right column */
+/* /// Right Column /// */
 
 .right-col {
-    margin-top: 50vh;
+    margin-top: 45vh;
 }
 
 .row-orange-bars {

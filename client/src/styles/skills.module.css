@@ -55,6 +55,8 @@
   padding-top: 0.5rem;
 }
 
+/* /// Dropdown description on hover/// */
+
 .skill-description {
   opacity: 0;
   max-height: 0;
@@ -92,25 +94,27 @@
   font-size: 0.9rem;
 }
 
-
-
 .skills-divider-col {
   margin-top: 3rem;
   display: flex;
-  justify-content: center;  /* horizontal center */
-  align-items: center;      /* vertical center */
+  justify-content: center;
+  align-items: center;
 }
 
 .skills-divider {
-    border-left: 1px solid #000; /* thickness and color */
-    height: 100%; /* or a fixed height like 150px */
+    border-left: 1px solid #000;
+    height: 100%;
     opacity: 0.25;
-    margin: 0 auto; /* center horizontally */
+    margin: 0 auto;
 }
 
-/*=== Responsive Styles ===*/
+/*=== Responsive Media ===*/
 
 @media (max-width: 768px) {
+  .skills-container {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
   .skills-title {
     text-align: center;
   }
