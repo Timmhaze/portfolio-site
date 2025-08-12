@@ -31,7 +31,7 @@ export const hardSkillsData = [
   },
   {
     skillName: "SQL",
-    skillDescription: "Confident with relational databases, schema design, joins, and CRUD operations using SQL syntax.",
+    skillDescription: "Confident with relational databases, schema design, joins, and CRUD operations using SQL syntax while conforming to ACID principles.",
     skillLevel: 4
   },
   {
@@ -74,27 +74,27 @@ export const hardSkillsData = [
 export const softSkillsData = [
   {
     skillName: "Communication",
-    skillDescription: "Clearly articulate ideas, actively listen, and tailor messaging to both technical and non-technical individuals.",
+    skillDescription: "Able to clearly articulate ideas, actively listen, and tailor messaging to both technical and non-technical individuals.",
     skillLevel: 5
   },
   {
     skillName: "Problem Solving",
-    skillDescription: "Break down complex challenges, analyze logically, and create efficient, practical solutions under pressure.",
+    skillDescription: "Capable of breaking down complex challenges, analyze logically, and create efficient, practical solutions.",
     skillLevel: 4
   },
   {
     skillName: "Adaptability",
-    skillDescription: "Quick to adjust to new tools, workflows, and environments, I consider change as an opportunity to grow and improve.",
+    skillDescription: "I am quick to adjust to new tools, workflows, and environments, I consider change as an opportunity to grow and improve.",
     skillLevel: 5
   },
   {
     skillName: "Teamwork",
-    skillDescription: "Collaborate productively in team settings, valuing diverse abilities and working toward shared project goals by leveraging individual strengths where effective.",
+    skillDescription: "Have collaborated productively in multiple team settings, valuing diverse abilities and working toward shared project goals by leveraging individual strengths where effective.",
     skillLevel: 5
   },
   {
     skillName: "Customer Service",
-    skillDescription: "Prioritize user needs, I like to offer practical, and technically sound support and guidance.",
+    skillDescription: "From previous experience, customer interactions and manner are second nature to me.",
     skillLevel: 5
   },
   {
@@ -112,7 +112,7 @@ export const softSkillsData = [
 export const toolsData = [
   {
     skillName: "MySQL",
-    skillDescription: "Design and query structured relational databases using SQL for backend systems, data storage, and application logic.",
+    skillDescription: "Designed and utilized structured relational databases using SQL for backend systems and data storage.",
     skillLevel: 4
   },
   {
@@ -122,12 +122,12 @@ export const toolsData = [
   },
   {
     skillName: "Unity",
-    skillDescription: "Develop interactive 2D/3D applications using Unity, with experience in game mechanics and level design.",
+    skillDescription: "Developed interactive 3D applications using Unity, with experience in game mechanics and level design.",
     skillLevel: 3
   },
   {
     skillName: "Unreal Engine",
-    skillDescription: "Build 3D scenes and gameplay using Unreal Engine with Blueprint scripting and familiarity with real-time rendering tools. Particularly familair with Niagara particle system.",
+    skillDescription: "Contributed to building numerous 3D scenes, working with blueprints and using real-time effects to inject life into thems. Particularly familair with Niagara particle system.",
     skillLevel: 3
   },
   {
@@ -147,7 +147,7 @@ export const toolsData = [
   },
   {
     skillName: "Postman",
-    skillDescription: "Testing, monitoring, and debuging RESTful APIs using Postman with collections, environments, and various authentication methods. ",
+    skillDescription: "Testing, monitoring, and debuging RESTful APIs using Postman with collections.",
     skillLevel: 4
   }
 ];

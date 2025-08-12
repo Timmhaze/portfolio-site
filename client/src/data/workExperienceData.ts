@@ -5,7 +5,7 @@ const experienceData = [
         company: 'Café am Neuen See',
         type: 'Fulltime',
         date: '2024 ~ July 2024',
-        description: "Afterward, I spent a few months bartending at Café am Neuen See, a busy biergarten in Berlin. The job was physically demanding and non-stop, requiring constant focus and stamina. It pushed me to work even more efficiently under pressure and maintain a positive attitude even during the busiest shifts.",
+        description: "My most recent occupation saw me spending a few months bartending at Café am Neuen See, a busy biergarten in Berlin. The job was physically demanding and non-stop, requiring constant focus and stamina. It pushed me to work even more efficiently under pressure and maintain a positive attitude even during the busiest shifts.",
         location: 'Berlin, Germany'
     },
     {
@@ -14,7 +14,7 @@ const experienceData = [
         company: "Murphy's Irish Pub",
         type: 'Part-time',
         date: '2022 ~ 2023',
-        description: "After wrapping up at Houghton Mifflin Harcourt, I moved to Berlin and took a break from tech by doing bar work at an Irish pub, Murphy’s. It was a lively, fast-paced environment that pushed me to think on my feet, juggle multiple tasks, and connect with all kinds of people. I learned how to stay calm under pressure and sharpened my communication skills, all while having a lot of fun along the way. Those experiences taught me a lot about teamwork and adaptability, which have become invaluable in my development career.",
+        description: "In 2022 I moved to Berlin and took a break from tech by doing bar work at an Irish pub, Murphy’s. It was a lively, fast-paced environment that pushed me to think on my feet, juggle multiple tasks, and connect with all kinds of people. I learned how to stay calm under pressure and sharpened my communication skills, all while having a lot of fun along the way. Those experiences taught me a lot about teamwork and adaptability, which have become invaluable in my development career.",
         location: 'Berlin, Germany'
     },
     {
