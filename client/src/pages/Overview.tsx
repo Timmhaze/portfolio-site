@@ -3,6 +3,7 @@ import styles from '../App.module.css';
 
 import FloatingNav from '../components/FloatingNav';
 import LandingPage from '../components/LandingPage';
+import LandingPage_Mobile from '../components/LandingPage_Mobile';
 import SectionHeader from '../components/SectionHeader';
 import About from '../components/About';
 import WorkExperience from '../components/WorkExperience';
@@ -34,8 +35,7 @@ export default function Overview() {
       {isMobile ? null : <FloatingNav />}
 
       <div id="Intro">
-        {/* <Landing /> */}
-        <LandingPage />
+        {isMobile ? <LandingPage_Mobile /> : <LandingPage />}
       </div>
       
       <div id="Profile" className={styles['profile-section']}>

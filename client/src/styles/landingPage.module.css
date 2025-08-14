@@ -79,6 +79,7 @@
     background-color: white;
     height: 2rem;
     width: 80%;
+    border-radius: 8px;
     max-width: 27rem;
 }
 
@@ -143,3 +144,71 @@
     width: 80%;
     max-width: 47.3rem;
 }
+
+/*=== Responsive Styles ===*/
+
+@media (max-width: 768px) {
+    .landing-page-mob-container {
+       /* height: 100vh; */
+    }
+
+    .mob-upper-half {
+        background-color: #F7882F;
+    }
+
+    .mob-white-bars {
+        margin-top: 3vh;
+        margin-left: 0rem;
+        padding-left: 0rem;
+    }
+
+    .mob-white-bar {
+        background-color: white;
+        margin-top: 1vh;
+        height: 1.3rem;
+        width: 65%;
+    }
+
+    .f-name-mobile {
+        padding-top: 5%;
+        color: white;
+        display: inline-block;
+        font-size: 8.5vh;
+        padding-left: 1rem;
+        font-weight: bold;
+        font-family: Arial, sans-serif;
+    }
+
+    .s-name-mobile {
+        text-align: right;
+        color: #F7882F;
+        font-size: 10vh;
+        padding-right: 3rem;
+        font-weight: bold;
+        font-family: Arial, sans-serif;
+    }
+
+    .subtitle-mobile {
+        padding-top: 1%;
+        text-align: center;
+        color: #F7882F;
+        font-size: 4vh;
+        font-weight: bold;
+        font-family: Arial, sans-serif;
+    }
+
+    .mob-orange-bars {
+        margin-top: 3vh;
+        margin-left: auto;
+    }
+
+    .mob-orange-bar {
+        background-color: #F7882F;
+        margin-left: auto;
+        margin-top: 1vh;
+        border-radius: 4px;
+        height: 1rem;
+        width: 50%;
+    }
+}
+
