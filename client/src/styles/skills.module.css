@@ -1,8 +1,6 @@
 
 .skills-container {
   padding-bottom: 15rem;
-  margin-left: none;
-  margin-right: none;
 }
 
 .skill-level-desc {
@@ -42,10 +40,6 @@
   margin-bottom: 0rem;
 }
 
-.skills-list-row {
-  margin: none;
-}
-
 .skills-list-row:hover {
   color: #F7882F;
 }
@@ -71,7 +65,9 @@
   padding-left: 1rem;
   padding-top: 0.40rem;
   border-left: 1px solid orange;
-  width: 100%;
+  width: auto;
+  box-sizing: border-box;
+  max-width: 100%;
   color: rgb(141, 141, 141);
   font-size: 1rem;
   font-style: italic;
@@ -111,10 +107,6 @@
 /*=== Responsive Media ===*/
 
 @media (max-width: 768px) {
-  .skills-container {
-    margin-left: 1rem;
-    margin-right: 1rem;
-  }
   .skills-title {
     text-align: center;
   }

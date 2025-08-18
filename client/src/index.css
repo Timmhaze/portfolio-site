@@ -6,4 +6,13 @@
 
 html {
   scroll-behavior: smooth;
+  /* overflow-x: hidden; */
 }
+
+* {
+  outline: 1px dashed red;
+}
+
+/* body {
+  overflow-x: hidden;
+} */
